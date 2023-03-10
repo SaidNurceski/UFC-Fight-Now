@@ -1,19 +1,7 @@
 ----------------------------------------------------------------
-Fri Mar 10 07:41:01 UTC 2023:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0186-ca77-4c43-0000073857b8 
-on database directory C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\Projekt\UFC-Fight-Now\FightSystem\db1 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@42110406 
-Loaded from file:/C:/Users/saidn/AppData/Roaming/JetBrains/IntelliJIdea2022.3/jdbc-drivers/Apache%20Derby/10.15.2.0/derby-10.15.2.0.jar
-java.vendor=JetBrains s.r.o.
-java.runtime.version=17.0.5+1-b653.25
-user.dir=C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\Projekt\UFC-Fight-Now\FightSystem
-os.name=Windows 10
-os.arch=amd64
-os.version=10.0
-derby.system.home=null
-Database Class Loader started - derby.database.classpath=''----------------------------------------------------------------
-Fri Mar 10 07:41:09 UTC 2023:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance b8450018-0186-ca76-eb64-000007388f20 
-on database directory C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\Projekt\UFC-Fight-Now\FightSystem\db1 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@42110406 
+Fri Mar 10 07:47:45 UTC 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0186-ca7d-74fe-000007388f20 
+on database directory C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\Projekt\UFC-Fight-Now\FightSystem\db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@42110406 
 Loaded from file:/C:/Users/saidn/AppData/Roaming/JetBrains/IntelliJIdea2022.3/jdbc-drivers/Apache%20Derby/10.15.2.0/derby-10.15.2.0.jar
 java.vendor=JetBrains s.r.o.
 java.runtime.version=17.0.5+1-b653.25
