@@ -1,0 +1,30 @@
+@startuml
+Fighter -- Match
+(Fighter,Match) . Lineup
+Team -- Match
+Division -- Fighter
+Fighter -- Team
+Match <|-- OneVsOne
+Match <|-- TeamMatch
+
+Fighter  --  Team
+(Fighter, Team) . TeamLineUp
+
+
+
+
+
+class Team{
+}
+
+class Fighter{
+
+}
+class Match{
+
+
+}
+enum Division
+
+
+@enduml
