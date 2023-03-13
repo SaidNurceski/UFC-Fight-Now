@@ -1,2 +1,4 @@
-package org.example.entity;public class Match {
+package org.example.entity;
+public class Match {
+
 }
