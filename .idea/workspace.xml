@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b34ce942-c283-4fd5-8cb5-cab0c9779fb8" name="Changes" comment="" />
+    <list default="true" id="b34ce942-c283-4fd5-8cb5-cab0c9779fb8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FightSystem/pics/app_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/README.adoc" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +28,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Saidprpr/3.Klasse/PR JAVA 3.Klasse/Projekt/UFC-Fight-Now",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -33,6 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678189007197</updated>
       <workItem from="1678189008631" duration="87000" />
+      <workItem from="1678786290040" duration="1788000" />
     </task>
     <servers />
   </component>

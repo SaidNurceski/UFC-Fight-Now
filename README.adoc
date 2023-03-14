@@ -1,2 +1,12 @@
-# UFC-Fight-Now
-Said Nurceski, Balint Balazs
+= UFC-Fight-Now image:FightSystem/pics/app_logo.png[float="right", width=150px, height=200px]
+
+== Beschreibung
+
+Wählen Sie aus einer umfangreichen Liste von UFC-Kämpfern Ihre Lieblingskämpfer aus und treten Sie gegen andere Kämpfer an.
+Einzelkämpfe: Fordern Sie einen Kämpfer Ihrer Wahl zu einem Einzelkampf heraus und kämpfen Sie gegen ihn.
+Teamkämpfe: Stellen Sie Ihr eigenes Team von Kämpfern zusammen und treten Sie gegen andere Teams an.
+Gewinnen und Verlieren: Verfolgen Sie Ihre Siege und Niederlagen und arbeiten Sie hart daran, sich in der Rangliste zu verbessern.
+
+== Anmerkungen
+
+Dieses Projekt wurde von Said Nurceski und Balint Balazs entwickelt und ist nicht mit der UFC oder ihren Kämpfern verbunden. Es dient ausschließlich zu Unterhaltungszwecken.
