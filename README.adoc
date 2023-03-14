@@ -1,4 +1,4 @@
-= UFC-Fight-Now image:FightSystem/pics/app_logo.png[width=150px, height=150px]
+= UFC-Fight-Now image:FightSystem/pics/app_logo.png[float="right", width=150px, height=200px]
 
 == Beschreibung
 
