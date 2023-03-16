@@ -6,7 +6,7 @@ public class Fighter {
     private  Long id;
     private  Long age;
 
-    public Fighter(Division division, String name, Long id, Long age) {
+    public Fighter(Long id, Long age,Division division, String name) {
         this.division = division;
         this.name = name;
         this.id = id;
