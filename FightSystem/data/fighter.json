@@ -1,0 +1,238 @@
+{
+    "Flyweight": [
+        {
+            "name": "Deiveson Figueiredo",
+            "age": 34,
+            "rank": 1,
+            "image_url": "https://www.google.com/search?q=deiveson+figueiredo&rlz=1C5CHFA_enUS931US931&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiY7YHJlY3vAhXSM80KHdxtBPQQ_AUIDCgD&biw=1366&",
+            "weight": "125 lbs",
+            "record": "20-1-0",
+            "weight_class": "Flyweight",
+            "origin": "Brazil"
+        },
+        {
+            "name": "Brandon Moreno",
+            "age": 27,
+            "rank": 2,
+            "image_url": "https://www.google.com/search?q=brandon+moreno&rlz=1C5CHFA_enUS931US931&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiRnL6slY3vAhUBS6wKHQZ0A5QQ_AUIDCgD&biw=1366&",
+            "weight": "125 lbs",
+            "record": "19-5-2",
+            "weight_class": "Flyweight",
+            "origin": "Mexico"
+        }
+    ],
+    "Bantamweight": [
+        {
+            "name": "Aljamain Sterling",
+            "age": 32,
+            "rank": 1,
+            "image_url": "https://www.google.com/search?q=aljamain+sterling&rlz=1C5CHFA_enUS931US931&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiQqJ3xlo3vAhXJyDgGHaTjAfkQ_AUIDCgD&biw=1366&",
+            "weight": "135 lbs",
+            "record": "20-3-0",
+            "weight_class": "Bantamweight",
+            "origin": "United States"
+        },
+        {
+            "name": "Petr Yan",
+            "age": 28,
+            "rank": 2,
+            "image_url": "https://www.google.com/search?q=petr+yan&rlz=1C5CHFA_enUS931US931&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiU9r6zlo3vAhXLyDgGHZw8CrQQ_AUIDCgD&biw=1366&",
+            "weight": "135 lbs",
+            "record": "15-2-0",
+            "weight_class": "Bantamweight",
+            "origin": "Russia"
+        }
+    ],
+    "Featherweight": [
+        {
+            "name": "Alexander Volkanovski",
+            "age": 32,
+            "rank": 1,
+            "image_url": "https://www.google.com/search?q=alexander+volkanovski&rlz=1C5CHFA_enUS931US931&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiK6pSyl43vAhU5yDgGHb0-CuAQ_AUIDCgD&biw=1366",
+            "weight": "145 lbs",
+            "record": "23-1-0",
+            "weight_class": "Featherweight",
+            "origin": "Australia"
+        },
+        {
+            "name": "Max Holloway",
+            "age": 29,
+            "rank": 2,
+            "image_url": "https://www.google.com/search?q=max+holloway&rlz=1C5CHFA_enUS931US931&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjH0tT7l43vAhXQyDgGHewvB8AQ_AUIDCgD&biw=1366",
+            "weight": "145 lbs",
+            "record": "22-6-0",
+            "weight_class": "Featherweight",
+            "origin": "United States"
+        }
+    ],
+    "Lightweight": [
+        {
+            "name": "Islam Makachev",
+            "age": 30,
+            "rank": 14,
+            "image_url": "https://www.google.com/search?q=islam+makachev&rlz=1C5CHFA_enUS920US920&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiU6YKo8uHzAhVGxjgGHfX9CpMQ_AUIBigB&biw=1366&bih=657#imgrc=_",
+            "weight": "70 kg",
+            "record": "20-1",
+            "weight_class": "Lightweight",
+            "origin": "Russia"
+        },
+        {
+            "name": "Khabib Nurmagomedov",
+            "age": 33,
+            "rank": 1,
+            "image_url": "https://www.google.com/search?q=khabib+nurmagomedov&rlz=1C5CHFA_enUS920US920&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiU6YKo8uHzAhVGxjgGHfX9CpMQ_AUIBigB&biw=1366&bih=657#imgrc=_",
+            "weight": "70 kg",
+            "record": "29-0",
+            "weight_class": "Lightweight",
+            "origin": "Russia"
+        },
+        {
+            "name": "Charles Oliveira",
+            "age": 31,
+            "rank": 2,
+            "image_url": "https://www.google.com/search?q=charles+oliveira&rlz=1C5CHFA_enUS931US931&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjTtJeEl43vAhUEyDgGHQ8xDfMQ_AUIDCgD&biw=1366",
+            "weight": "155 lbs",
+            "record": "31-8-0",
+            "weight_class": "Lightweight",
+            "origin": "Brazil"
+        },
+        {
+            "name": "Dustin Poirier",
+            "age": 32,
+            "rank": 3,
+            "image_url": "https://www.google.com/search?q=dustin+poirier&rlz=1C5CHFA_enUS931US931&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiX7JL1l43vAhUBmK0KHWmBCGcQ_AUIDCgD&biw=1366",
+            "weight": "155 lbs",
+            "record": "28-6-0",
+            "weight_class": "Lightweight",
+            "origin": "United States"
+        }
+    ],
+    "Welterweight": [
+        {
+            "name": "Khamzat Chimaev",
+            "age": 28,
+            "rank": 6,
+            "image_url": "https://www.google.com/search?q=khamzat+chimaev&rlz=1C1GCEU_enUS832US832&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi9teSQhrPmAhXOyDgGHVvVDGwQ_AUIEigB&biw=1366&bih=657#imgrc=_",
+            "weight": "170 lbs",
+            "record": "10-0-0",
+            "weight_class": "Welterweight",
+            "origin": "Russia"
+          },
+        {
+            "Name": "Kamaru Usman",
+            "Age": 34,
+            "Rank": 1,
+            "Image-URL": "https://www.google.com/search?q=kamaru+usman&rlz=1C1GCEU_enUS832US832&...",
+            "Weight": "170 lbs",
+            "Record": "19-1-0",
+            "weight_class": "Welterweight",
+            "Country": "Nigeria"
+        },
+        {
+            "Name": "Colby Covington",
+            "Age": 33,
+            "Rank": 2,
+            "Image-URL": "https://www.google.com/search?q=colby+covington&rlz=1C1GCEU_enUS832US832&...",
+            "Weight": "170 lbs",
+            "Record": "16-2-0",
+            "weight_class": "Welterweight",
+            "Country": "United States"
+        },
+        {
+            "Name": "Gilbert Burns",
+            "Age": 35,
+            "Rank": 3,
+            "Image-URL": "https://www.google.com/search?q=gilbert+burns&rlz=1C1GCEU_enUS832US832&...",
+            "Weight": "170 lbs",
+            "Record": "20-4-0",
+            "weight_class": "Welterweight",
+            "Country": "Brazil"
+        }
+    ],
+    "Middleweight": [
+        {
+            "name": "Israel Adesanya",
+            "age": 32,
+            "rank": 1,
+            "image_url": "https://www.google.com/search?q=israel+adesanya&rlz=1C1GCEU_enUS832US832&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiKjO7_r5fzAhXEyDgGHZS9AHQQ_AUIBigB&biw=1366&bih=657#imgrc=_",
+            "weight": "83 kg",
+            "record": "21-1-0",
+            "weight_class": "Middleweight",
+            "origin": "Nigeria"
+        },
+        {
+            "name": "Robert Whittaker",
+            "age": 31,
+            "rank": 2,
+            "image_url": "https://www.google.com/search?q=robert+whittaker&rlz=1C1GCEU_enUS832US832&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiOlbHg0N3nAhUDyDgGHcfpDDoQ_AUIEigB&biw=1366&bih=657#imgrc=_",
+            "weight": 185,
+            "record": "23-5-0",
+            "weight_class": "Middleweight",
+            "origin": "Australia"
+        },
+        {
+            "name": "Paulo Costa",
+            "age": 30,
+            "rank": 3,
+            "image_url": "https://www.google.com/search?q=paulo+costa&rlz=1C1GCEU_enUS832US832&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiu06aYwMnvAhWVFzQIHQaSCuQQ_AUIDigB&biw=1366&bih=657#imgrc=_",
+            "weight": 185,
+            "record": "13-1-0",
+            "weight_class": "Middleweight",
+            "origin": "Brazil"
+        }
+    ],
+    "Light Heavyweight": [
+        {
+            "name": "Jan Blachowicz",
+            "age": 38,
+            "rank": 1,
+            "image_url": "https://www.google.com/search?q=jan+blachowicz&rlz=1C1GCEU_enUS832US832&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiYtYn0wMnvAhUdK80KHb83BaMQ_AUIDCgD&biw=1366&bih=657#imgrc=_",
+            "weight": 205,
+            "record": "28-8-0",
+            "weight_class": "Light Heavyweight",
+            "origin": "Poland"
+        },
+        {
+            "name": "Glover Teixeira",
+            "age": 41,
+            "rank": 2,
+            "image_url": "https://www.google.com/search?q=glover+teixeira&rlz=1C1GCEU_enUS832US832&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiQ2ujLwMnvAhUC0KwKHY5BBlMQ_AUIDCgD&biw=1366&bih=657#imgrc=_",
+            "weight": 205,
+            "record": "32-7-0",
+            "weight_class": "Light Heavyweight",
+            "origin": "Brazil"
+        },
+        {
+            "name": "Aleksandar Rakic",
+            "age": 29,
+            "rank": 3,
+            "image_url": "https://www.google.com/search?q=aleksandar+rakic&rlz=1C1GCEU_enUS832US832&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiA7JjtwMnvAhVZXM0KHQlkBXMQ_AUIDCgD&biw=1366&bih=657#imgrc=_",
+            "weight": 205,
+            "record": "14-2-0",
+            "weight_class": "Light Heavyweight",
+            "origin": "Austria"
+        }
+    ],
+    "Heavyweight": [
+        {
+            "name": "Francis Ngannou",
+            "age": 35,
+            "rank": 1,
+            "image_url": "https://www.google.com/search?q=francis+ngannou&rlz=1C1GCEU_enUS832US832&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiH-5_hwMnvAhXbGDQIHVrsCJMQ_AUIBigB&biw=1366&bih=657#imgrc=_",
+            "weight": 265,
+            "record": "17-3-0",
+            "weight_class": "Heavyweight",
+            "origin": "Cameroon"
+        },
+        {
+            "name": "Ciryl Gane",
+            "age": 31,
+            "rank": 3,
+            "image_url": "https://www.google.com/search?q=ciryl+gane&rlz=1C1GCEU_enUS832US832&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiO8JvR2MnvAhXZXM0KHcmxBO8Q_AUIDCgD&biw=1366&bih=657#imgrc=_",
+            "weight": 247,
+            "record": "10-0-0",
+            "weight_class": "Heavyweight",
+            "origin": "France"
+        }
+    ]
+}
