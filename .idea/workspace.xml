@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b34ce942-c283-4fd5-8cb5-cab0c9779fb8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FightSystem/pics/app_logo.png" afterDir="false" />
+    <list default="true" id="a74d4a78-af10-4987-836e-0e3fe39cc155" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/README.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +14,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2MgV2i5bl2kAbhOazU4ce9KtL2N" />
+  <component name="ProjectId" id="2NK1JC6a4n0gPxRam6PzjffreT3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,10 +25,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Saidprpr/3.Klasse/PR JAVA 3.Klasse/Projekt/UFC-Fight-Now",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -39,13 +32,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b34ce942-c283-4fd5-8cb5-cab0c9779fb8" name="Changes" comment="" />
-      <created>1678189007197</created>
+      <changelist id="a74d4a78-af10-4987-836e-0e3fe39cc155" name="Changes" comment="" />
+      <created>1679397886162</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1678189007197</updated>
-      <workItem from="1678189008631" duration="87000" />
-      <workItem from="1678786290040" duration="1788000" />
+      <updated>1679397886162</updated>
+      <workItem from="1679397887702" duration="72000" />
+      <workItem from="1679398072681" duration="219000" />
     </task>
     <servers />
   </component>
