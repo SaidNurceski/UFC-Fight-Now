@@ -1,0 +1,31 @@
+CREATE TABLE FIGHTER(
+             F_ID      INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) primary key,
+             NAME          VARCHAR(15),
+             AGE            INTEGER Not NULL ,
+             RECORD         VARCHAR(15),
+             RANK           INTEGER NOT NULL,
+            DIVISION           VARCHAR(15)
+
+);
+
+
+CREATE TABLE TEAM_MEMBERS(
+            TM_ID  INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) primary key,
+            F_ID  INTEGER NOT NULL ,
+            FOREIGN KEY  (F_ID)  REFERENCES  FIGHTER(F_ID)
+);
+
+CREATE TABLE TEAM(
+                     T_ID           INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) primary key,
+                     NAME                VARCHAR(15),
+                     TM_ID                INTEGER NOT NULL,
+                     FOREIGN KEY  (TM_ID) REFERENCES  TEAM_MEMBERS(TM_ID)
+);
+
+CREATE TABLE MATCHES(
+    M_ID  INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) primary key,
+    T_IDA INTEGER NOT NULL,
+    T_IDB INTEGER NOT NULL,
+    FOREIGN KEY (T_IDA) references TEAM(T_ID),
+    FOREIGN KEY (T_IDB) references TEAM(T_ID)
+);

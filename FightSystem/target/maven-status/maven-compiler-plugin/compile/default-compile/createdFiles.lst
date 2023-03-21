@@ -1,1 +1,6 @@
+org\example\entity\Fighter.class
+org\example\entity\Division.class
+org\example\entity\Match.class
 org\example\Main.class
+org\example\entity\OneVsOne.class
+org\example\entity\TeamMatch.class

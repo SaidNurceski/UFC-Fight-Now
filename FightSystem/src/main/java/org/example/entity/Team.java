@@ -37,4 +37,5 @@ public class Team {
     public void setFighters(Set<Fighter> fighters) {
         this.fighters = fighters;
     }
+    //adshjkl
 }
