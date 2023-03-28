@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Tue Mar 21 10:56:45 UTC 2023:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0187-03d0-6e75-000007388f20 
-on database directory C:\ProgJava\UFC-FIGHT\UFC-Fight-Now\FightSystem\db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@42110406 
+Tue Mar 28 06:36:49 UTC 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0187-26ee-fce9-000007388f20 
+on database directory C:\ProgJava\UFC_PROJEKT\UFC-Fight-Now\FightSystem\db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@42110406 
 Loaded from file:/C:/Users/balaz/AppData/Roaming/JetBrains/IntelliJIdea2022.3/jdbc-drivers/Apache%20Derby/10.15.2.0/derby-10.15.2.0.jar
 java.vendor=JetBrains s.r.o.
 java.runtime.version=17.0.5+1-b653.25
-user.dir=C:\ProgJava\UFC-FIGHT\UFC-Fight-Now\FightSystem
+user.dir=C:\ProgJava\UFC_PROJEKT\UFC-Fight-Now\FightSystem
 os.name=Windows 10
 os.arch=amd64
 os.version=10.0
