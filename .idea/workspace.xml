@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a74d4a78-af10-4987-836e-0e3fe39cc155" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +25,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Saidprpr/3.Klasse/PR JAVA 3.Klasse/Projekt/UFC-Fight-Now",
+    "last_opened_file_path": "C:/Saidprpr/3.Klasse/PR JAVA 3.Klasse/Projekt/UFC-Fight-Now/FightSystem",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -38,7 +43,10 @@
       <option name="presentableId" value="Default" />
       <updated>1679397886162</updated>
       <workItem from="1679397887702" duration="72000" />
-      <workItem from="1679398072681" duration="219000" />
+      <workItem from="1679398072681" duration="695000" />
+      <workItem from="1679903190835" duration="23000" />
+      <workItem from="1679984528020" duration="672000" />
+      <workItem from="1679991972362" duration="136000" />
     </task>
     <servers />
   </component>
