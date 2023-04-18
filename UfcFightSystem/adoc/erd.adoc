@@ -1,0 +1,26 @@
+@startuml
+class Match {
+-teamA: Team
+-teamB: Team
+-lineUpPosition
+}
+note left: lineup wird durch lineUpPosition \n(Reihenfolge) festgelegt.
+
+class Team {
+
+}
+note left : Ein Team kann nur aus einer Person (OneVsOne)\n oder mehreren Personen bestehen.
+
+class Person {
+
+}
+
+enum Divison
+
+
+Divison <-- Person
+Person "*" -- "*" Team
+Team "1" -- "*" Match: Team 1
+Team "1" -- "*" Match: Team 2
+(Team,Person) . TeamMembers
+@enduml
