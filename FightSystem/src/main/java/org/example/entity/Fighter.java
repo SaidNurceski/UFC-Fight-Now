@@ -4,12 +4,12 @@ public class Fighter {
     private Division division;
     private String name;
     private  Long id;
-    private  Long age;
+    private  int age;
 
-    public Fighter(Long id, Long age,Division division, String name) {
+    public Fighter( int age,Division division, String name) {
         this.division = division;
         this.name = name;
-        this.id = id;
+
         this.age = age;
     }
 
@@ -37,11 +37,11 @@ public class Fighter {
         this.id = id;
     }
 
-    public Long getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(Long age) {
+    public void setAge(int age) {
         this.age = age;
     }
 }

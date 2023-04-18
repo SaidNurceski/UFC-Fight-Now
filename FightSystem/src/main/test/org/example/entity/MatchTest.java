@@ -12,11 +12,10 @@ class MatchTest {
     void createMatch() {
         Set<Fighter> fighters = new HashSet<>();
         Set<Fighter> fighters2 = new HashSet<>();
-        fighters.add(new Fighter(2L,30L,Division.LightHeavyweight,"Islam Makachev"));
-        fighters2.add(new Fighter(2L,30L,Division.Heavyweight,"Jon Jones"));
+        fighters.add(new Fighter(30,Division.LightHeavyweight,"Islam Makachev"));
+        fighters2.add(new Fighter(30,Division.Heavyweight,"Jon Jones"));
 
-        Match ufc285 = new Match(1L,"Champions Fight",new Team(2L,"Kings",fighters),new Team(1L,"Wolfes",fighters2));
-        assertEquals(ufc285.getId(),1L);
+        Match ufc285 = new Match("Champions Fight",new Team("Kings",fighters),new Team("Wolfes",fighters2));
         assertEquals(ufc285.getName(),"Champions Fight");
     }
 }

@@ -11,11 +11,10 @@ class TeamTest {
 
     @Test
     void createTeam() {
-        Fighter newFighter = new Fighter(2L,32L,Division.Heavyweight,"Jon Jones");
+        Fighter newFighter = new Fighter(32,Division.Heavyweight,"Jon Jones");
         Set fighters = new HashSet();
         fighters.add(newFighter);
-        Team newTeam = new Team(1L,"Kings",fighters);
-        assertEquals(newTeam.getId(),1L);
+        Team newTeam = new Team("Kings",fighters);
         assertEquals(newTeam.getName(),"Kings");
 
     }

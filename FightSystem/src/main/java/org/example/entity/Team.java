@@ -8,8 +8,8 @@ public class Team {
     private Set<Fighter> fighters;
 
 
-    public Team(Long id, String name, Set<Fighter> fighters) {
-        this.id = id;
+    public Team( String name, Set<Fighter> fighters) {
+
         this.name = name;
         this.fighters = fighters;
     }
