@@ -8,7 +8,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DataBase {
-    private static Connection establishConnection() {
+    public static Connection establishConnection() {
         System.out.println("= Opening connection. =");
         Connection connection;
         try {

@@ -14,7 +14,7 @@ class TeamTest {
 
     @Test
     void createTeam() {
-        Fighter newFighter = new Fighter(32, Division.Heavyweight,"Jon Jones");
+        Fighter newFighter = new Fighter("Islam Makachev", 32, Division.Lightweight, 2,"32-7-2" );
         Set fighters = new HashSet();
         fighters.add(newFighter);
         Team newTeam = new Team("Kings",fighters);

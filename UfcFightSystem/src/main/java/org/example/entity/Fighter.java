@@ -5,12 +5,22 @@ public class Fighter {
     private String name;
     private  Long id;
     private  int age;
+    private String record;
 
-    public Fighter( int age,Division division, String name) {
+    private int rank;
+
+    public Fighter(String name, int age, Division division, int rank, String record) {
         this.division = division;
         this.name = name;
-
         this.age = age;
+    }
+
+    public Fighter(String name, Division division, int age, String record, int rank) {
+        this.division = division;
+        this.name = name;
+        this.age = age;
+        this.record = record;
+        this.rank = rank;
     }
 
     public Division getDivision() {
@@ -43,5 +53,21 @@ public class Fighter {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getRecord() {
+        return record;
+    }
+
+    public void setRecord(String record) {
+        this.record = record;
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
     }
 }

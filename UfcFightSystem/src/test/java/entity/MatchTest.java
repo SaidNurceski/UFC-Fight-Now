@@ -16,8 +16,13 @@ class MatchTest {
     void createMatch() {
         Set<Fighter> fighters = new HashSet<>();
         Set<Fighter> fighters2 = new HashSet<>();
-        fighters.add(new Fighter(30, Division.LightHeavyweight,"Islam Makachev"));
-        fighters2.add(new Fighter(30,Division.Heavyweight,"Jon Jones"));
+
+        Fighter fighter1 = new Fighter("Islam Makachev", 32, Division.Lightweight, 2,"32-7-2" );
+        Fighter fighter2 = new Fighter("Jon Jones", 32, Division.Heavyweight, 2,"32-7-2" );
+
+
+        fighters.add(fighter1);
+        fighters2.add(fighter2);
 
         Match ufc285 = new Match("Champions Fight",new Team("Kings",fighters),new Team("Wolfes",fighters2));
         assertEquals(ufc285.getName(),"Champions Fight");

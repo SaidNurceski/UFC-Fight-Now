@@ -10,7 +10,7 @@ class FighterTest {
 
     @Test
     void createFighter() {
-        Fighter islam = new Fighter(32, Division.Lightweight,"Islam Makachev");
+        Fighter islam = new Fighter("Islam Makachev", 32, Division.Lightweight, 2,"32-7-2" );
 
         assertEquals(islam.getDivision(),Division.Lightweight);
         assertEquals(islam.getAge(),32);
