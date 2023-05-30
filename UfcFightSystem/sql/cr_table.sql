@@ -1,6 +1,6 @@
 CREATE TABLE FIGHTER(
              F_ID      INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) primary key,
-             NAME          VARCHAR(15),
+             NAME          VARCHAR(50),
              AGE            INTEGER Not NULL ,
              RECORD         VARCHAR(15),
              RANK           INTEGER NOT NULL,
