@@ -2,7 +2,9 @@ package repository;
 
 
 import repository.exceptions.DBConnectionException;
+import org.apache.derby.jdbc.ClientDataSource;
 
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -27,6 +29,4 @@ public class DataBase {
 
         }
     }
-
-
 }
