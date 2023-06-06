@@ -6,8 +6,6 @@ import org.example.entity.Team;
 public class FightGame {
     Team team1;
     Team team2;
-
-
     Match match;
 
     public FightGame(Team team1, Team team2, Match match) {
