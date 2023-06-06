@@ -10,7 +10,7 @@
          <children>
             <Label text="Player 1" />
             <Label text="Chose your Fighter" />
-            <ListView prefHeight="200.0" prefWidth="200.0" />
+            <ListView prefHeight="200.0" prefWidth="200.0" fx:id="fightersLvP1" />
             <HBox prefHeight="29.0" prefWidth="295.0">
                <children>
                   <Button mnemonicParsing="false" onAction="#onAddBtn" text="Add" />
@@ -19,19 +19,19 @@
                </children>
             </HBox>
             <Label text="Player 1s team" />
-            <ListView prefHeight="200.0" prefWidth="200.0" />
+            <ListView prefHeight="200.0" prefWidth="200.0"  fx:id="team1Lv" />
          </children>
       </VBox>
       <VBox prefHeight="200.0" prefWidth="100.0">
          <children>
-            <ImageView fitHeight="32.0" fitWidth="29.0" onMouseClicked="#close_app" pickOnBounds="true" preserveRatio="true" styleClass="closeBtn">
+            <ImageView fitHeight="32.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" styleClass="closeBtn">
                <image>
                   <Image url="@img/close.png" />
                </image>
             </ImageView>
             <Label text="Player2" />
             <Label text="Chose your Fighter" />
-            <ListView prefHeight="200.0" prefWidth="200.0" />
+            <ListView prefHeight="200.0" prefWidth="200.0" fx:id="fightersLvP2"  />
             <HBox prefHeight="23.0" prefWidth="296.0">
                <children>
                   <Button fx:id="addBtn" mnemonicParsing="false" onAction="#onAddBtn" text="Add" />
@@ -40,7 +40,7 @@
                </children>
             </HBox>
             <Label text="Player 2s Team" />
-            <ListView prefHeight="200.0" prefWidth="200.0" />
+            <ListView prefHeight="200.0" prefWidth="200.0" fx:id="team2Lv"/>
          </children>
       </VBox>
    </items>
