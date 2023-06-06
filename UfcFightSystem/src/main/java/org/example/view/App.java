@@ -1,11 +1,13 @@
 package org.example.view;
 
 import javafx.application.Application;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import org.example.entity.Fighter;
 
 import java.io.IOException;
 
@@ -15,7 +17,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         currentStage = stage;
-        Parent root = FXMLLoader.load(getClass().getResource("/login-view.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fight-screen.fxml"));
         Scene scene = new Scene(root);
        stage.initStyle(StageStyle.UNDECORATED);
         stage.setTitle("Login");

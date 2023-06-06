@@ -70,4 +70,9 @@ public class Fighter {
     public void setRank(int rank) {
         this.rank = rank;
     }
+
+    @Override
+    public String toString() {
+        return name + "[" + division + "]";
+    }
 }
