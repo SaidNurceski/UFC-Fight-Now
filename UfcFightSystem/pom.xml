@@ -70,11 +70,15 @@
             <artifactId>derby</artifactId>
             <version>10.15.2.0</version>
         </dependency>
+<<<<<<< HEAD
         <dependency>
             <groupId>org.apache.derby</groupId>
             <artifactId>derby</artifactId>
             <version>10.15.2.0</version>
         </dependency>
+=======
+
+>>>>>>> 80f021d257798b4a679fb13bffe1018a98683b1e
     </dependencies>
 
 

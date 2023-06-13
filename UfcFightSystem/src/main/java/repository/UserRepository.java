@@ -12,7 +12,7 @@ public class UserRepository {
 
     public void insert(User user) {
         throwExceptionOnInvalidUser(user);
-        try (Connection connection = Database.establishConnection()) {
+        try (Connection connection = Database.getInstance().getConnection()) {
             String sql = "INSERT INTO U_USER (U_FIRST_NAME, U_LAST_NAME, U_PASSWORD, U_EMAIL, U_AGE) VALUES (?,?,?,?,?)";
 
             PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
@@ -42,7 +42,7 @@ public class UserRepository {
 
     public void update(User user) {
         throwExceptionOnInvalidUser(user);
-        try (Connection connection = Database.establishConnection()) {
+        try (Connection connection = Database.getInstance().getConnection()) {
             String sql = "UPDATE U_USER SET " +
                     "U_FIRST_NAME=?, " +
                     "U_LAST_NAME=?, " +
@@ -72,7 +72,7 @@ public class UserRepository {
         if (id < 0) {
             throw new IllegalArgumentException("ID must not be negative");
         }
-        try (Connection connection = Database.establishConnection()) {
+        try (Connection connection = Database.getInstance().getConnection()) {
             String sql = "DELETE FROM U_USER WHERE U_ID=?";
 
             PreparedStatement statement = connection.prepareStatement(sql);
@@ -89,7 +89,7 @@ public class UserRepository {
     public List<User> getAll() {
         List<User> userList = new ArrayList<>();
 
-        try (Connection connection = Database.establishConnection()) {
+        try (Connection connection = Database.getInstance().getConnection()) {
             String sql = "SELECT * FROM U_USER";
             PreparedStatement statement = connection.prepareStatement(sql);
             ResultSet result = statement.executeQuery();
@@ -112,7 +112,7 @@ public class UserRepository {
     }
 
     public boolean isUserExisting(String email, String pwd){
-        try (Connection connection = Database.establishConnection()) {
+        try (Connection connection = Database.getInstance().getConnection()) {
             String sql = "SELECT count(*) from U_USER WHERE U_PASSWORD = ? AND U_EMAIL = ?";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, pwd);
@@ -134,7 +134,7 @@ public class UserRepository {
         if (id < 0) {
             throw new IllegalArgumentException("ID must not be negative");
         }
-        try (Connection connection = Database.establishConnection()) {
+        try (Connection connection = Database.getInstance().getConnection()) {
             String sql = "SELECT * FROM U_USER WHERE U_ID=?";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setLong(1, id);
