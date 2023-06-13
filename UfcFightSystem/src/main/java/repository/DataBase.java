@@ -24,7 +24,7 @@ public class DataBase {
 
     public static void closeConnection() {
         try {
-            DriverManager.getConnection("jdbc:derby:;shutdown=true");
+            DriverManager.getConnection("jdbc:derby:db;shutdown=true");
         } catch (Exception ex) {
 
         }
