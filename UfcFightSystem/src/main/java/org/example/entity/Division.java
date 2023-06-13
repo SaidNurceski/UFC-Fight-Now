@@ -1,12 +1,12 @@
 package org.example.entity;
 
 public enum Division {
-     LightHeavyweight("LIGHTHEAYWEIGHT"),
-    Featherweight("FEATHERWEIGHT"),
-    Middleweight("MIDDLEWEIGHT"),
-    Lightweight("LIGHTWEIGHT"),
+    LIGHTHEAYWEIGHT("LIGHTHEAYWEIGHT"),
+    FEATHERWEIGHT("FEATHERWEIGHT"),
+    MIDDLEWEIGHT("MIDDLEWEIGHT"),
+    LIGHTWEIGHT("LIGHTWEIGHT"),
     Heavyweight("HEAVYWEIGHT"),
-    Strawweight("STRAWWEIGHT");
+    STRAWWEIGHT("STRAWWEIGHT");
      private  String value;
 
     Division(String lightheayweight) {

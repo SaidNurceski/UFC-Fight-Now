@@ -25,8 +25,9 @@ public class FighterRepository implements Persistent<Fighter>{
             PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO Fighter (NAME, AGE, Record,Rank,Division) VALUES (?, ?, ?,?,?)", Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, entity.getName());
             preparedStatement.setInt(2, entity.getAge());
-            preparedStatement.setInt(3, entity.getRank());
-            preparedStatement.setString(4, entity.getRecord());
+            preparedStatement.setString(3, entity.getRecord());
+            preparedStatement.setInt(4, entity.getRank());
+            preparedStatement.setString(5, entity.getDivisionName());
 
 
             int rowsAffected = preparedStatement.executeUpdate();
@@ -35,10 +36,12 @@ public class FighterRepository implements Persistent<Fighter>{
                 resultSet.next();
             }
             preparedStatement.close();
+            System.out.printf(rowsAffected + " rows affected");
 
 
         }
         catch(SQLException s){
+            System.out.println(s.toString());
 
 
         }
@@ -50,9 +53,15 @@ public class FighterRepository implements Persistent<Fighter>{
         try{
             Connection connection = DataBase.establishConnection();
             PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM Fighter WHERE F_ID =? ");
-            preparedStatement.setLong(1, id);
+            preparedStatement.setInt(1, id);
+            System.out.println("Deleted Fighter with id: " + id);
+
+            if (preparedStatement.executeUpdate() == 0) {
+                throw new SQLException("Delete from answer_option failed, no rows affected");
+            }
 
         } catch (SQLException e) {
+            System.out.println("Error not existing with the Fighter with id: " + id);
             throw new RuntimeException(e);
         }
 
@@ -60,7 +69,7 @@ public class FighterRepository implements Persistent<Fighter>{
     }
 
     @Override
-    public List<Fighter> findAll() {
+    public List<Fighter> getAll() {
         //NAME, AGE, Record,Rank,Division
         try {
             Connection connection = DataBase.establishConnection();
@@ -73,10 +82,11 @@ public class FighterRepository implements Persistent<Fighter>{
                 long id = resultSet.getLong("F_ID");
                 String name = resultSet.getString("NAME");
                 int age = resultSet.getInt("AGE");
-                String record = resultSet.getString("RECORD");
+                String  record = resultSet.getString("RECORD");
                 int rank = resultSet.getInt("RANK");
                 String division = resultSet.getString("DIVISION");
-                fighters.add(new Fighter(name,age,Division.valueOf(division),rank,record));
+
+                fighters.add(new Fighter(name,age,division,record,rank));
 
             }
             return fighters;
@@ -91,15 +101,15 @@ public class FighterRepository implements Persistent<Fighter>{
         try {
             //NAME, AGE, Record,Rank,Division
             Connection connection = DataBase.establishConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE Fighter SET NAME = ?, AGE = ?, Record = ?, Rank =?,Division =? WHERE F_ID = ?");
+            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE Fighter SET NAME = ?, AGE = ?, Record = ?, Rank = ?,Division = ? WHERE F_ID = ?");
             preparedStatement.setString(1, entity.getName());
             preparedStatement.setInt(2, entity.getAge());
             preparedStatement.setString(3, entity.getRecord());
             preparedStatement.setInt(4, entity.getRank());
-            preparedStatement.setString(5, entity.getDivision().toString());
+            preparedStatement.setString(5, entity.getDivisionName());
+            preparedStatement.setLong(6, entity.getId());
 
             int rowsAffected = preparedStatement.executeUpdate();
-            preparedStatement.close();
             System.out.printf("%d rows affected.%n", rowsAffected);
         } catch (SQLException e) {
             e.printStackTrace();

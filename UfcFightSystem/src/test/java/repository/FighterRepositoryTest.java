@@ -11,26 +11,38 @@ class FighterRepositoryTest {
 
     @Test
     void save() {
+        FighterRepository repo = new FighterRepository();
+        Fighter fighter = new Fighter("Mc Gregor",32, "Lightweight","32-7-2", 2 );
+        repo.save(fighter);
 
     }
 
     @Test
     void insert() {
+        FighterRepository repo = new FighterRepository();
+        Fighter fighter = new Fighter("Mc Gregor",32, "Lightweight","32-7-2", 2 );
+        repo.insert(fighter);
 
     }
 
     @Test
     void delete() {
+        FighterRepository repo = new FighterRepository();
+        repo.delete(1);
     }
 
     @Test
     void findAll() {
         FighterRepository repo = new FighterRepository();
-        List<Fighter> listOfAllFighters = repo.findAll();
+        List<Fighter> listOfAllFighters = repo.getAll();
+        System.out.println(listOfAllFighters);
         assertEquals(10, listOfAllFighters.size());
     }
 
     @Test
     void update() {
+        FighterRepository repo = new FighterRepository();
+        Fighter fighter = new Fighter(2L,"ANYAD","HEAVYWEIGHT", 32,"32-7-2", 2 );
+        repo.update(fighter);
     }
 }

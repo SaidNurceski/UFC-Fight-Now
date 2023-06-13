@@ -4,22 +4,23 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.view.controller.FightScreenController">
+<SplitPane dividerPositions="0.5, 0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="org.example.view.controller.FightScreenController">
    <items>
-      <VBox prefHeight="200.0" prefWidth="100.0">
+      <VBox prefHeight="397.0" prefWidth="337.0">
          <children>
             <Label text="Player 1" />
             <Label text="Chose your Fighter" />
-            <ListView prefHeight="200.0" prefWidth="200.0" fx:id="fightersLvP1" />
+            <ListView fx:id="fightersToChoose" prefHeight="200.0" prefWidth="200.0" />
             <HBox prefHeight="29.0" prefWidth="295.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#onAddBtn" text="Add" />
-                  <Button mnemonicParsing="false" onAction="#onRemoveBtn" text="Remove" />
+                  <Button mnemonicParsing="false" onAction="#onChoosePlayer1" text="CHOOSE" />
+                  <Button mnemonicParsing="false" onAction="#onRemoveBtn" text="UNDO" />
                   <Button mnemonicParsing="false" onAction="#onDetailsBtn" text="Details" />
                </children>
             </HBox>
-            <Label text="Player 1s team" />
-            <ListView prefHeight="200.0" prefWidth="200.0"  fx:id="team1Lv" />
+            <Label text="Player1 CHOSED CHARACHTER" />
+            <ListView fx:id="choosedP1" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </VBox>
       <VBox prefHeight="200.0" prefWidth="100.0">
@@ -29,19 +30,20 @@
                   <Image url="@img/close.png" />
                </image>
             </ImageView>
-            <Label text="Player2" />
+            <Label text="Player2 CHOOSED CHARACHTER" />
             <Label text="Chose your Fighter" />
-            <ListView prefHeight="200.0" prefWidth="200.0" fx:id="fightersLvP2"  />
+            <ListView fx:id="fightersToChoose2" prefHeight="200.0" prefWidth="200.0" />
             <HBox prefHeight="23.0" prefWidth="296.0">
                <children>
-                  <Button fx:id="addBtn" mnemonicParsing="false" onAction="#onAddBtn" text="Add" />
+                  <Button fx:id="addBtn" mnemonicParsing="false" onAction="#onChoosePlayer2" text="CHOSE" />
                   <Button fx:id="removeBtn" mnemonicParsing="false" onAction="#onRemoveBtn" text="Remove" />
                   <Button fx:id="detailsBtn" mnemonicParsing="false" onAction="#onDetailsBtn" text="Details" />
                </children>
             </HBox>
             <Label text="Player 2s Team" />
-            <ListView prefHeight="200.0" prefWidth="200.0" fx:id="team2Lv"/>
+            <ListView fx:id="team2Lv" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </VBox>
+      <Button mnemonicParsing="false" text="FIGHT" />
    </items>
 </SplitPane>

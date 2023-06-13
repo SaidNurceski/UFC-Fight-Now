@@ -6,6 +6,6 @@ public interface Persistent <T>{
     public void save(T entity);
     public void insert(T entity);
     public void delete(int id);
-    public List<T> findAll();
+    public List<T> getAll();
     public void update(T entity);
 }

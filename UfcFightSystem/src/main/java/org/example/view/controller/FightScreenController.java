@@ -11,22 +11,21 @@ import javafx.scene.control.ListView;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import org.example.entity.Division;
 import org.example.entity.Fighter;
 import org.example.view.App;
+import repository.FighterRepository;
 
 import java.io.IOException;
-import java.util.Objects;
+import java.util.LinkedList;
 
 public class FightScreenController<T> {
-    public ListView fightersLvP2;
-    public ListView fightersLvP1;
-    public ObservableList<Fighter> fighterObservableList = FXCollections.observableArrayList();
-    public ObservableList<Fighter> teamOfFighters1 = FXCollections.observableArrayList();
-    public ObservableList<Fighter> teamsOfFighters2 = FXCollections.observableArrayList();
+    public ListView fightersToChoose;
 
-    public ListView team1Lv;
-    public ListView team2Lv;
+    private static ObservableList<Fighter> fighters = FXCollections.observableArrayList(new LinkedList<>());
+    FighterRepository fighterRepository = new FighterRepository();
+
+
+
 
     @FXML
     private void close_app(MouseEvent event) {
@@ -52,25 +51,20 @@ public class FightScreenController<T> {
     }
 
     public void initialize() {
-        fighterObservableList.add(new Fighter("Conor McGregor", 2, Division.Lightweight, 2, "23-7"));
-        fighterObservableList.add(new Fighter("Khabib Nurmagomedov", 1, Division.Lightweight, 1, "29-0"));
-        fighterFilteredList = new FilteredList<Fighter>(fighterObservableList);
-        fightersLvP1.setItems(fighterFilteredList);
-        fightersLvP2.setItems(fighterFilteredList);
+       /* fighters.addAll(fighterRepository.getAll());
+        fightersToChoose.setItems(fighters);*/
 
-        team1Lv.setItems(teamOfFighters1);
-        team2Lv.setItems(teamsOfFighters2);
     }
 
 
-    public void addBtnHelper(ListView<Fighter> listView) {
+  /*  public void addBtnHelper(ListView<Fighter> listView) {
         System.out.println(listView.getId().toString());
 
         if (Objects.equals(listView.getId().toString(), "fightersLvP1")) {
             System.out.println("team1Lv");
             Fighter selectedFighter = listView.getSelectionModel().getSelectedItem();
             teamOfFighters1.add(selectedFighter);
-            System.out.println("Fighter added to team: " + selectedFighter.getName());
+            System.out.println("Fighter added to team1: " + selectedFighter.getName());
             team1Lv.refresh();
         }
 
@@ -80,23 +74,25 @@ public class FightScreenController<T> {
             Fighter selectedFighter = listView.getSelectionModel().getSelectedItem();
             teamsOfFighters2.add(selectedFighter);
             team2Lv.refresh();
-            System.out.println("Fighter added to team: " + selectedFighter.getName());
+            System.out.println("Fighter added to team2: " + selectedFighter.getName());
             team2Lv.refresh();
 
 
         }
-    }
+    }*/
 
 
-    public void onAddBtn(ActionEvent actionEvent) {
-        addBtnHelper(fightersLvP1);
-        addBtnHelper(fightersLvP2);
-
-    }
 
     public void onRemoveBtn(ActionEvent actionEvent) {
     }
 
     public void onDetailsBtn(ActionEvent actionEvent) {
+    }
+
+    public void onChoosePlayer2(ActionEvent actionEvent) {
+
+    }
+
+    public void onChoosePlayer1(ActionEvent actionEvent) {
     }
 }

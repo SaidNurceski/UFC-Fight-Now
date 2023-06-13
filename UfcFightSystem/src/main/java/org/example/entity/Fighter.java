@@ -2,6 +2,7 @@ package org.example.entity;
 
 public class Fighter {
     private Division division;
+    private String  divisionName;
     private String name;
     private  Long id;
     private  int age;
@@ -13,6 +14,23 @@ public class Fighter {
         this.division = division;
         this.name = name;
         this.age = age;
+    }
+
+    public Fighter(Long id,String name,String divisionName,  int age, String record, int rank) {
+        this.divisionName = divisionName;
+        this.name = name;
+        this.id = id;
+        this.age = age;
+        this.record = record;
+        this.rank = rank;
+    }
+
+    public Fighter(String name, int age, String divisionName, String record, int rank) {
+        this.divisionName = divisionName;
+        this.name = name;
+        this.age = age;
+        this.record = record;
+        this.rank = rank;
     }
 
     public Fighter(String name, Division division, int age, String record, int rank) {
@@ -59,6 +77,14 @@ public class Fighter {
         return record;
     }
 
+    public String getDivisionName() {
+        return divisionName;
+    }
+
+    public void setDivisionName(String divisionName) {
+        this.divisionName = divisionName;
+    }
+
     public void setRecord(String record) {
         this.record = record;
     }
@@ -73,6 +99,6 @@ public class Fighter {
 
     @Override
     public String toString() {
-        return name + "[" + division + "]";
+        return name + "[" + divisionName + "]";
     }
 }
