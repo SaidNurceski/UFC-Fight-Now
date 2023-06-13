@@ -11,7 +11,7 @@ import org.example.entity.Fighter;
 
 import java.io.IOException;
 
-public class App extends Application {
+public class gApp extends Application {
     private static Stage currentStage = null;
 
     @Override
