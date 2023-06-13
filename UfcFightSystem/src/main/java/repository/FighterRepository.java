@@ -9,8 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FighterRepository implements Persistent<Fighter>{
-    private static DataSource dataSource;
-
+    private Connection connection = DataBase.establishConnection();
     @Override
     public void save(Fighter fighter) {
         if (fighter.getId() == null) {
@@ -22,7 +21,7 @@ public class FighterRepository implements Persistent<Fighter>{
 
     @Override
     public void insert(Fighter entity) {
-        try (Connection connection = Database.getInstance().getConnection()) {
+        try {
             PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO Fighter (NAME, AGE, Record,Rank,Division) VALUES (?, ?, ?,?,?)", Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, entity.getName());
             preparedStatement.setInt(2, entity.getAge());
@@ -40,7 +39,8 @@ public class FighterRepository implements Persistent<Fighter>{
 
         }
         catch(SQLException s){
-            s.printStackTrace();
+
+
         }
 
     }
@@ -53,18 +53,21 @@ public class FighterRepository implements Persistent<Fighter>{
             preparedStatement.setLong(1, id);
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
+
+
     }
 
     @Override
     public List<Fighter> findAll() {
-        List<Fighter> fighters = new ArrayList<>();
-
         //NAME, AGE, Record,Rank,Division
-        try (Connection connection = Database.getInstance().getConnection()){
+        try {
+            Connection connection = DataBase.establishConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(
                     " SELECT * from Fighter");
+            List<Fighter> fighters = new ArrayList<>();
+
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 long id = resultSet.getLong("F_ID");
@@ -76,20 +79,18 @@ public class FighterRepository implements Persistent<Fighter>{
                 fighters.add(new Fighter(name,age,Division.valueOf(division),rank,record));
 
             }
+            return fighters;
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return fighters;
+       DataBase.closeConnection();
+        return null;
     }
     @Override
     public void update(Fighter entity) {
-<<<<<<< HEAD
         try {
             //NAME, AGE, Record,Rank,Division
             Connection connection = DataBase.establishConnection();
-=======
-        try (Connection connection = Database.getInstance().getConnection()) {
->>>>>>> 80f021d257798b4a679fb13bffe1018a98683b1e
             PreparedStatement preparedStatement = connection.prepareStatement("UPDATE Fighter SET NAME = ?, AGE = ?, Record = ?, Rank =?,Division =? WHERE F_ID = ?");
             preparedStatement.setString(1, entity.getName());
             preparedStatement.setInt(2, entity.getAge());

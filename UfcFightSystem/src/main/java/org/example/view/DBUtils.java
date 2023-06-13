@@ -1,6 +1,8 @@
 package org.example.view;
 
 import org.example.entity.User;
+import repository.FighterRepository;
+import org.example.entity.Fighter;
 import org.example.view.controller.HomeController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -74,7 +76,7 @@ public class DBUtils {
             alert.show();
         }
         else{
-           changeScene(event, "./fight-screen.fxml", "Home", email);
+           changeScene(event, "./home-view.fxml", "Home", email);
         }
     }
 }

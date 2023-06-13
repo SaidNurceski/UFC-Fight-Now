@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-<<<<<<< HEAD
     <data-source source="LOCAL" name="db" uuid="639c1267-edf1-4607-97ec-b88cf956b9d1">
-=======
-    <data-source source="LOCAL" name="db" uuid="9b8823dd-0af3-430a-b3fb-9276422e6e1c">
->>>>>>> 80f021d257798b4a679fb13bffe1018a98683b1e
       <driver-ref>derby.embedded</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>

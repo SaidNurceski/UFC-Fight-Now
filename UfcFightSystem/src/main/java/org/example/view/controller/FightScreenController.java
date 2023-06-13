@@ -37,6 +37,20 @@ public class FightScreenController<T> {
     @FXML
     private FilteredList<Fighter> fighterFilteredList = null;
 
+    private void getNewStage(String name, String title) throws IOException {
+        Stage stage = App.getCurrentStage();
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/view/" + name + ".fxml"));
+
+        Image icon = new Image("file:../../../images/logo.jpg");
+        stage.getIcons().add(icon);
+
+        Scene scene = new Scene(fxmlLoader.load(), 795, 538);
+
+        stage.setTitle(title);
+        stage.setScene(scene);
+        stage.show();
+    }
+
     public void initialize() {
         fighterObservableList.add(new Fighter("Conor McGregor", 2, Division.Lightweight, 2, "23-7"));
         fighterObservableList.add(new Fighter("Khabib Nurmagomedov", 1, Division.Lightweight, 1, "29-0"));
