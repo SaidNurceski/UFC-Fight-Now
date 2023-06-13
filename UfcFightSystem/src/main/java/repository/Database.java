@@ -1,43 +1,32 @@
 package repository;
 
-import org.apache.derby.jdbc.ClientDataSource;
 
-import javax.sql.DataSource;
+import repository.exceptions.DBConnectionException;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Database {
-    private static final String CONNECTION_STRING = "jdbc:derby:db";
-    private static Database instance;
-    private Connection connection;
-
-    private Database() { }
-
-    public static Database getInstance() {
-        if (instance == null) {
-            instance = new Database();
-        }
-
-        return instance;
-    }
-
-    public Connection getConnection() {
+    public static Connection establishConnection() {
+        System.out.println("= Opening connection. =");
+        Connection connection;
         try {
-            if (connection == null || connection.isClosed()) {
-                connection = DriverManager.getConnection(CONNECTION_STRING);
-            }
+            connection = DriverManager.getConnection("jdbc:derby:db");
+            connection.setAutoCommit(true);
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBConnectionException(e);
         }
-
         return connection;
     }
 
-    public void shutdownDatabase() {
+    public static void closeConnection() {
         try {
             DriverManager.getConnection("jdbc:derby:;shutdown=true");
-        } catch (SQLException ignored) {
+        } catch (Exception ex) {
+
         }
     }
+
+
 }
