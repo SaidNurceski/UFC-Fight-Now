@@ -14,7 +14,7 @@ public class DataBase {
         System.out.println("= Opening connection. =");
         Connection connection;
         try {
-            connection = DriverManager.getConnection("jdbc:derby:db2");
+            connection = DriverManager.getConnection("jdbc:derby:db");
             connection.setAutoCommit(true);
         } catch (SQLException e) {
             throw new DBConnectionException(e);

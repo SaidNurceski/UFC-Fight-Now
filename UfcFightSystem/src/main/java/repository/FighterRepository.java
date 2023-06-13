@@ -49,7 +49,7 @@ public class FighterRepository implements Persistent<Fighter>{
     public void delete(int id) {
         try{
             Connection connection = DataBase.establishConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM Fighter WHERE id =? ");
+            PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM Fighter WHERE F_ID =? ");
             preparedStatement.setLong(1, id);
 
         } catch (SQLException e) {
@@ -91,7 +91,7 @@ public class FighterRepository implements Persistent<Fighter>{
         try {
             //NAME, AGE, Record,Rank,Division
             Connection connection = DataBase.establishConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE Fighter SET NAME = ?, AGE = ?, Record = ?, Rank =?,Division =? WHERE ID = ?");
+            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE Fighter SET NAME = ?, AGE = ?, Record = ?, Rank =?,Division =? WHERE F_ID = ?");
             preparedStatement.setString(1, entity.getName());
             preparedStatement.setInt(2, entity.getAge());
             preparedStatement.setString(3, entity.getRecord());
