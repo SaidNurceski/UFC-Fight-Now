@@ -12,6 +12,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class HomeController implements Initializable {
+    public Button btn_fighters;
     @FXML
     private Button btn_logout;
 
@@ -24,6 +25,15 @@ public class HomeController implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 DBUtils.changeScene(event, "/login-view.fxml", "Login!", null);
+            }
+
+
+        });
+
+        btn_fighters.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                DBUtils.changeScene(actionEvent,"/fighters-view.fxml","Fighters",null);
             }
         });
     }

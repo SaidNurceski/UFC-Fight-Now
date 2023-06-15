@@ -85,8 +85,9 @@ public class FighterRepository implements Persistent<Fighter>{
                 String  record = resultSet.getString("RECORD");
                 int rank = resultSet.getInt("RANK");
                 String division = resultSet.getString("DIVISION");
+                String nickname = resultSet.getString("NICKNAME");
 
-                fighters.add(new Fighter(name,age,division,record,rank));
+                fighters.add(new Fighter(name,age,division,record,rank,nickname));
 
             }
             return fighters;

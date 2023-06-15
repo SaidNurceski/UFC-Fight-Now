@@ -9,6 +9,9 @@ class UserRepositoryTest {
 
     @Test
     void insert() {
+        UserRepository userRepository = new UserRepository();
+      User user = new User("test","test","123","t@gmail.com",12);
+      userRepository.insert(user);
     }
 
     @Test

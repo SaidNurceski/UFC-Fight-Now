@@ -8,6 +8,8 @@ public class Fighter {
     private  int age;
     private String record;
 
+    private  String nickName;
+
     private int rank;
 
     public Fighter(String name, int age, Division division, int rank, String record) {
@@ -25,12 +27,13 @@ public class Fighter {
         this.rank = rank;
     }
 
-    public Fighter(String name, int age, String divisionName, String record, int rank) {
+    public Fighter(String name, int age, String divisionName, String record, int rank,String nickName) {
         this.divisionName = divisionName;
         this.name = name;
         this.age = age;
         this.record = record;
         this.rank = rank;
+        this.nickName= nickName;
     }
 
     public Fighter(String name, Division division, int age, String record, int rank) {
@@ -39,6 +42,14 @@ public class Fighter {
         this.age = age;
         this.record = record;
         this.rank = rank;
+    }
+
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
     public Division getDivision() {
@@ -99,6 +110,6 @@ public class Fighter {
 
     @Override
     public String toString() {
-        return name + "[" + divisionName + "]";
+        return name + "[ " + divisionName + " ]";
     }
 }
