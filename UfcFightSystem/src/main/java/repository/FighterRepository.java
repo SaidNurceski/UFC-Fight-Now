@@ -1,9 +1,7 @@
 package repository;
 
-import org.example.entity.Division;
 import org.example.entity.Fighter;
 
-import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
