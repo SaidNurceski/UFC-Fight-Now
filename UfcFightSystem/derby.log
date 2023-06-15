@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ----------------------------------------------------------------
 Thu Jun 15 06:27:03 UTC 2023:
 Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0188-bdbc-6e54-000007679098 
@@ -15,6 +16,10 @@ Thu Jun 15 06:27:03 UTC 2023:
 Shutting down instance a816c00e-0188-bdbc-6e54-000007679098 on database directory C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@42110406 
 Thu Jun 15 06:27:03 UTC 2023 Thread[RMI TCP Connection(4)-127.0.0.1,5,RMI Runtime] Cleanup action starting
 java.sql.SQLException: Failed to start database 'db' with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@42110406, see the next exception for details.
+=======
+Thu Jun 15 08:26:04 CEST 2023 Thread[JavaFX Application Thread,5,main] Cleanup action starting
+java.sql.SQLException: XJ040.C : [0] db, [1] jdk.internal.loader.ClassLoaders$AppClassLoader@119d7047
+>>>>>>> ea1d2b8cfbfd10de249bebc9fbe6d2a6de1722a1
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:115)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:141)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Util.java:252)
@@ -26,6 +31,7 @@ java.sql.SQLException: Failed to start database 'db' with class loader jdk.inter
 	at org.apache.derby.iapi.jdbc.InternalDriver.getNewEmbedConnection(InternalDriver.java:654)
 	at org.apache.derby.iapi.jdbc.InternalDriver.connect(InternalDriver.java:300)
 	at org.apache.derby.iapi.jdbc.InternalDriver.connect(InternalDriver.java:967)
+<<<<<<< HEAD
 	at org.apache.derby.jdbc.EmbeddedDriver.connect(EmbeddedDriver.java:125)
 	at com.intellij.database.remote.jdbc.helpers.JdbcHelperImpl.connect(JdbcHelperImpl.java:670)
 	at com.intellij.database.remote.jdbc.impl.RemoteDriverImpl.connect(RemoteDriverImpl.java:65)
@@ -45,13 +51,72 @@ java.sql.SQLException: Failed to start database 'db' with class loader jdk.inter
 	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+=======
+	at org.apache.derby.iapi.jdbc.AutoloadedDriver.connect(AutoloadedDriver.java:136)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at repository.DataBase.establishConnection(DataBase.java:17)
+	at repository.UserRepository.<init>(UserRepository.java:11)
+	at org.example.view.DBUtils.signUpUser(DBUtils.java:50)
+	at org.example.view.controller.RegistrationController$1.handle(RegistrationController.java:57)
+	at org.example.view.controller.RegistrationController$1.handle(RegistrationController.java:51)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@19.0.2.1/javafx.scene.Node.fireEvent(Node.java:8923)
+	at javafx.controls@19.0.2.1/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$MouseHandler.process(Scene.java:3894)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene.processMouseEvent(Scene.java:1887)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2620)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+>>>>>>> ea1d2b8cfbfd10de249bebc9fbe6d2a6de1722a1
 	at java.base/java.lang.Thread.run(Thread.java:833)
 Caused by: ERROR XJ040: Failed to start database 'db' with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@42110406, see the next exception for details.
 	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(SQLExceptionFactory.java:170)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:75)
+<<<<<<< HEAD
 	... 30 more
 Caused by: ERROR XSLAC: Database at C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\db has a format incompatible with the current version of software. It may have been created by or upgraded by a later version.
+=======
+	... 63 more
+Caused by: ERROR XSDB6: XSDB6.D : [0] C:\ProgJava\UFC_PROJEKT\UFC-Fight-Now\UfcFightSystem\db
+>>>>>>> ea1d2b8cfbfd10de249bebc9fbe6d2a6de1722a1
 	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)
 	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:295)
 	at org.apache.derby.impl.store.raw.log.LogToFile.verifyLogFormat(LogToFile.java:1929)
@@ -99,7 +164,11 @@ Caused by: ERROR XSLAC: Database at C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Pr
 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(EmbedConnection.java:4036)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(EmbedConnection.java:2816)
+<<<<<<< HEAD
 	... 27 more
+=======
+	... 60 more
+>>>>>>> ea1d2b8cfbfd10de249bebc9fbe6d2a6de1722a1
 ============= begin nested exception, level (1) ===========
 java.sql.SQLException: Database at C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\db has a format incompatible with the current version of software. It may have been created by or upgraded by a later version.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:115)
@@ -112,6 +181,7 @@ java.sql.SQLException: Database at C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Pro
 	at org.apache.derby.iapi.jdbc.InternalDriver.getNewEmbedConnection(InternalDriver.java:654)
 	at org.apache.derby.iapi.jdbc.InternalDriver.connect(InternalDriver.java:300)
 	at org.apache.derby.iapi.jdbc.InternalDriver.connect(InternalDriver.java:967)
+<<<<<<< HEAD
 	at org.apache.derby.jdbc.EmbeddedDriver.connect(EmbeddedDriver.java:125)
 	at com.intellij.database.remote.jdbc.helpers.JdbcHelperImpl.connect(JdbcHelperImpl.java:670)
 	at com.intellij.database.remote.jdbc.impl.RemoteDriverImpl.connect(RemoteDriverImpl.java:65)
@@ -131,6 +201,60 @@ java.sql.SQLException: Database at C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Pro
 	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+=======
+	at org.apache.derby.iapi.jdbc.AutoloadedDriver.connect(AutoloadedDriver.java:136)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at repository.DataBase.establishConnection(DataBase.java:17)
+	at repository.UserRepository.<init>(UserRepository.java:11)
+	at org.example.view.DBUtils.signUpUser(DBUtils.java:50)
+	at org.example.view.controller.RegistrationController$1.handle(RegistrationController.java:57)
+	at org.example.view.controller.RegistrationController$1.handle(RegistrationController.java:51)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@19.0.2.1/javafx.scene.Node.fireEvent(Node.java:8923)
+	at javafx.controls@19.0.2.1/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$MouseHandler.process(Scene.java:3894)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene.processMouseEvent(Scene.java:1887)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2620)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+>>>>>>> ea1d2b8cfbfd10de249bebc9fbe6d2a6de1722a1
 	at java.base/java.lang.Thread.run(Thread.java:833)
 Caused by: ERROR XSLAC: Database at C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\db has a format incompatible with the current version of software. It may have been created by or upgraded by a later version.
 	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)
@@ -180,7 +304,11 @@ Caused by: ERROR XSLAC: Database at C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Pr
 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(EmbedConnection.java:4036)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(EmbedConnection.java:2816)
+<<<<<<< HEAD
 	... 27 more
+=======
+	... 60 more
+>>>>>>> ea1d2b8cfbfd10de249bebc9fbe6d2a6de1722a1
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
 ERROR XSLAC: Database at C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\db has a format incompatible with the current version of software. It may have been created by or upgraded by a later version.
@@ -238,6 +366,7 @@ ERROR XSLAC: Database at C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-F
 	at org.apache.derby.iapi.jdbc.InternalDriver.getNewEmbedConnection(InternalDriver.java:654)
 	at org.apache.derby.iapi.jdbc.InternalDriver.connect(InternalDriver.java:300)
 	at org.apache.derby.iapi.jdbc.InternalDriver.connect(InternalDriver.java:967)
+<<<<<<< HEAD
 	at org.apache.derby.jdbc.EmbeddedDriver.connect(EmbeddedDriver.java:125)
 	at com.intellij.database.remote.jdbc.helpers.JdbcHelperImpl.connect(JdbcHelperImpl.java:670)
 	at com.intellij.database.remote.jdbc.impl.RemoteDriverImpl.connect(RemoteDriverImpl.java:65)
@@ -257,6 +386,60 @@ ERROR XSLAC: Database at C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-F
 	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+=======
+	at org.apache.derby.iapi.jdbc.AutoloadedDriver.connect(AutoloadedDriver.java:136)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at repository.DataBase.establishConnection(DataBase.java:17)
+	at repository.UserRepository.<init>(UserRepository.java:11)
+	at org.example.view.DBUtils.signUpUser(DBUtils.java:50)
+	at org.example.view.controller.RegistrationController$1.handle(RegistrationController.java:57)
+	at org.example.view.controller.RegistrationController$1.handle(RegistrationController.java:51)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@19.0.2.1/javafx.scene.Node.fireEvent(Node.java:8923)
+	at javafx.controls@19.0.2.1/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$MouseHandler.process(Scene.java:3894)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene.processMouseEvent(Scene.java:1887)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2620)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+>>>>>>> ea1d2b8cfbfd10de249bebc9fbe6d2a6de1722a1
 	at java.base/java.lang.Thread.run(Thread.java:833)
 ============= end nested exception, level (2) ===========
 Cleanup action completed

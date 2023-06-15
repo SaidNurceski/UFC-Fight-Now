@@ -10,7 +10,8 @@ public class UserRepository {
     private Connection connection = DataBase.establishConnection();
     public void insert(User user) {
         throwExceptionOnInvalidUser(user);
-        try (Connection connection = DataBase.establishConnection()) {
+        try  {
+
             String sql = "INSERT INTO U_USER (U_FIRST_NAME, U_LAST_NAME, U_PASSWORD, U_EMAIL, U_AGE) VALUES (?,?,?,?,?)";
 
             PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
@@ -110,7 +111,7 @@ public class UserRepository {
     }
 
     public boolean isUserExisting(String email, String pwd){
-        try (Connection connection = DataBase.establishConnection()) {
+        try {
             String sql = "SELECT count(*) from U_USER WHERE U_PASSWORD = ? AND U_EMAIL = ?";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, pwd);
