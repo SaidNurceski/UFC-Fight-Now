@@ -16,7 +16,7 @@
     <children>
         <ImageView  fitHeight="108.0" fitWidth="135.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="img/black_ufc_logo.png" />
+                <Image url="@img/black_ufc_logo.png" />
             </image>
         </ImageView>
         <ImageView  fx:id="imageFighter" fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
