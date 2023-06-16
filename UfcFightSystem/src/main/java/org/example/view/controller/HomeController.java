@@ -13,6 +13,7 @@ import java.util.ResourceBundle;
 
 public class HomeController implements Initializable {
     public Button btn_fighters;
+    public Button btnFighters;
     @FXML
     private Button btn_logout;
 
@@ -21,6 +22,13 @@ public class HomeController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        btnFighters.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                DBUtils.changeScene(actionEvent,"/fight-choose-view.fxml","Choose",null);
+            }
+        });
         btn_logout.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

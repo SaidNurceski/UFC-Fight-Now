@@ -1,8 +1,15 @@
 ----------------------------------------------------------------
+<<<<<<< HEAD
 Fri Jun 16 09:32:59 CEST 2023D001 : [0] The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585), [1] a816c00e-0188-c31f-273b-0000074f7318, [2] C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\db, [3] jdk.internal.loader.ClassLoaders$AppClassLoader@119d7047, [4] file:/C:/Users/saidn/.m2/repository/org/apache/derby/derby/10.15.2.0/derby-10.15.2.0.jar
 java.vendor=Oracle Corporation
 java.runtime.version=17.0.7+8-LTS-224
 user.dir=C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem
+=======
+Fri Jun 16 09:29:46 CEST 2023D001 : [0] The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585), [1] a816c00e-0188-c31c-3735-00000f0e10e8, [2] C:\ProgJava\UFC_PROJEKT\UFC-Fight-Now\UfcFightSystem\db, [3] jdk.internal.loader.ClassLoaders$AppClassLoader@119d7047, [4] file:/C:/Users/balaz/.m2/repository/org/apache/derby/derby/10.15.2.0/derby-10.15.2.0.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=17.0.6+10
+user.dir=C:\ProgJava\UFC_PROJEKT\UFC-Fight-Now\UfcFightSystem
+>>>>>>> f14f91616c3a7133c675c41989672df497058543
 os.name=Windows 10
 os.arch=amd64
 os.version=10.0
