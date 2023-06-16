@@ -14,12 +14,12 @@
             fx:controller="org.example.view.controller.DetailsController">
 
     <children>
-        <ImageView fitHeight="108.0" fitWidth="135.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView  fitHeight="108.0" fitWidth="135.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="img/black_ufc_logo.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView  fx:id="imageFighter" fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
         <Label fx:id="nameLabel" layoutX="179.0" layoutY="6.0" prefHeight="46.0" prefWidth="361.0" text="NAME OF THE FIGHTER">
             <font>
                 <Font name="Arial Black" size="18.0" />

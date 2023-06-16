@@ -4,7 +4,7 @@ CREATE TABLE FIGHTER(
              AGE            INTEGER Not NULL ,
              RECORD         VARCHAR(15),
              RANK           INTEGER NOT NULL,
-             PHOTO          VARCHAR(100),
+             PHOTO          VARCHAR(200),
              Nickname       VARCHAR(50),
             DIVISION           VARCHAR(15)
 

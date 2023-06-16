@@ -1,5 +1,5 @@
 ----------------------------------------------------------------
-Fri Jun 16 00:21:28 CEST 2023D001 : [0] The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585), [1] a816c00e-0188-c126-3d75-00000f10ba50, [2] C:\ProgJava\UFC_PROJEKT\UFC-Fight-Now\UfcFightSystem\db, [3] jdk.internal.loader.ClassLoaders$AppClassLoader@119d7047, [4] file:/C:/Users/balaz/.m2/repository/org/apache/derby/derby/10.15.2.0/derby-10.15.2.0.jar
+Fri Jun 16 08:44:52 CEST 2023D001 : [0] The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585), [1] a816c00e-0188-c2f3-1c60-00000f107f48, [2] C:\ProgJava\UFC_PROJEKT\UFC-Fight-Now\UfcFightSystem\db, [3] jdk.internal.loader.ClassLoaders$AppClassLoader@119d7047, [4] file:/C:/Users/balaz/.m2/repository/org/apache/derby/derby/10.15.2.0/derby-10.15.2.0.jar
 java.vendor=Eclipse Adoptium
 java.runtime.version=17.0.6+10
 user.dir=C:\ProgJava\UFC_PROJEKT\UFC-Fight-Now\UfcFightSystem
