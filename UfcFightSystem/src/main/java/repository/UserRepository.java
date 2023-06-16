@@ -5,6 +5,7 @@ import org.example.entity.User;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class UserRepository {
     private Connection connection = DataBase.establishConnection();
@@ -127,6 +128,29 @@ public class UserRepository {
         }
 
         return false;
+    }
+    public User getByEmail(String email){
+        try{
+            String sql = "SELECT * FROM U_USER WHERE U_EMAIL = ?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setString(1, email);
+
+            ResultSet result = statement.executeQuery();
+            while(result.next()) {
+                if(Objects.equals(email, result.getString("U_EMAIL")))
+                    return new User(result.getLong("U_ID"),
+                            result.getString("U_FIRST_NAME"),
+                            result.getString("U_LAST_NAME"),
+                            result.getString("U_EMAIL"),
+                            result.getString("U_PASSWORD"),
+                            result.getInt("U_AGE"));
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
     public static User getById(long id){
