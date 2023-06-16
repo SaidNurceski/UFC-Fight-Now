@@ -12,22 +12,15 @@ class FighterRepositoryTest {
     @Test
     void save() {
         FighterRepository repo = new FighterRepository();
-        Fighter fighter = new Fighter(2L,"McGregor","Lightweight", 32,"32-7-2", 2 );
+        Fighter fighter = new Fighter("Mc Gregor",32, "Lightweight","32-7-2", 2 );
         repo.save(fighter);
 
     }
 
     @Test
-    void findById() {
-        FighterRepository repo = new FighterRepository();
-        Fighter fighter = repo.findFighterById(1);
-        System.out.println(fighter);
-    }
-
-    @Test
     void insert() {
         FighterRepository repo = new FighterRepository();
-        Fighter fighter = new Fighter(2L,"McGregor","Lightweight", 32,"32-7-2", 2 );
+        Fighter fighter = new Fighter("Mc Gregor",32, "Lightweight","32-7-2", 2 );
         repo.insert(fighter);
 
     }

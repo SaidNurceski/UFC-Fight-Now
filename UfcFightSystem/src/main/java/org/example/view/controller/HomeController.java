@@ -49,8 +49,4 @@ public class HomeController implements Initializable {
     public void setUserInformation(String firstName){
         label_welcome.setText("Welcome " + firstName + "!");
     }
-
-    public void onBtnHistory(ActionEvent actionEvent) {
-        DBUtils.changeScene(actionEvent,"/history-view.fxml","History",null);
-    }
 }
