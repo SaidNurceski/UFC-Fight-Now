@@ -40,6 +40,8 @@ public class UserRepository {
         }
     }
 
+
+
     public void update(User user) {
         throwExceptionOnInvalidUser(user);
         try (Connection connection = DataBase.establishConnection()) {
