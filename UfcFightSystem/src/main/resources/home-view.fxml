@@ -34,7 +34,7 @@
                         <Font name="Arial Rounded MT Bold" size="13.0" />
                     </font>
                 </Button>
-                <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="289.0" stylesheets="@css/homeStyle.css" text="History" textFill="WHITE">
+                <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="289.0" stylesheets="@css/homeStyle.css" text="History" onAction="#onBtnHistory" textFill="WHITE">
                     <padding>
                         <Insets left="50.0" />
                     </padding>
