@@ -85,15 +85,38 @@ public class FighterRepository implements Persistent<Fighter>{
                 String division = resultSet.getString("DIVISION");
                 String nickname = resultSet.getString("NICKNAME");
 
-                fighters.add(new Fighter(name,age,division,record,rank,nickname));
+                fighters.add(new Fighter(id,name,division,age,record,rank));
 
             }
             return fighters;
         } catch (SQLException e) {
             e.printStackTrace();
         }
-       DataBase.closeConnection();
+        DataBase.closeConnection();
         return null;
+    }
+
+    public Fighter findFighterById(long id){
+        try{
+            Connection connection = DataBase.establishConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Fighter WHERE F_ID =? ");
+            preparedStatement.setLong(1, id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while(resultSet.next()){
+                System.out.println("Fighter ID: " + resultSet.getInt("F_ID"));
+                System.out.println("Fighter Name: " + resultSet.getString("NAME"));
+                System.out.println("Fighter Age: " + resultSet.getInt("AGE"));
+                System.out.println("Fighter Record: " + resultSet.getString("Record"));
+                System.out.println("Fighter Rank: " + resultSet.getInt("Rank"));
+                System.out.println("Fighter Division: " + resultSet.getString("Division"));
+                return new Fighter(resultSet.getLong("F_ID"),resultSet.getString("NAME"),resultSet.getString("Division"),resultSet.getInt("AGE"),resultSet.getString("Record"),resultSet.getInt("Rank"));
+            }
+        }
+        catch(SQLException s){
+            System.out.println(s.toString());
+        }
+        return null;
+
     }
     @Override
     public void update(Fighter entity) {

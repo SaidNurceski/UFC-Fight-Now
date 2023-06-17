@@ -2,7 +2,6 @@ package entity;
 
 import org.example.entity.Division;
 import org.example.entity.Fighter;
-import org.example.logik.FightGame;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
