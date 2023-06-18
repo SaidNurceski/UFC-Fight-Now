@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.view.controller.DetailsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.view.controller.DetailsController">
 
     <children>
         <ImageView fitHeight="108.0" fitWidth="135.0" layoutX="46.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
@@ -13,34 +13,34 @@
                 <Image url="@img/black_ufc_logo.png" />
             </image>
         </ImageView>
-        <ImageView fx:id="imageFighter" fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
-        <Label fx:id="nameLabel" layoutX="359.0" layoutY="36.0" prefHeight="46.0" prefWidth="245.0" text="NAME OF THE FIGHTER">
+        <ImageView fx:id="imageFighter" fitHeight="301.0" fitWidth="413.0" layoutX="232.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+        <Label fx:id="nameLabel" layoutX="266.0" layoutY="44.0" prefHeight="46.0" prefWidth="245.0" text="NAME OF THE FIGHTER">
             <font>
                 <Font name="Arial Black" size="18.0" />
             </font>
         </Label>
-        <Label fx:id="labelAge" layoutX="45.0" layoutY="187.0" prefHeight="22.0" prefWidth="80.0" text="Age:">
+        <Label fx:id="labelAge" layoutX="71.0" layoutY="188.0" prefHeight="22.0" prefWidth="127.0" text="Age:">
             <font>
                 <Font name="Ebrima Bold" size="16.0" />
             </font>
         </Label>
-        <Label fx:id="recordLabel" layoutX="45.0" layoutY="235.0" prefHeight="22.0" prefWidth="80.0" text="Record:">
+        <Label fx:id="recordLabel" layoutX="74.0" layoutY="228.0" prefHeight="22.0" prefWidth="151.0" text="Record:">
             <font>
                 <Font name="Ebrima Bold" size="16.0" />
             </font>
         </Label>
-        <Label fx:id="rankLabel" layoutX="45.0" layoutY="276.0" prefHeight="22.0" prefWidth="80.0" text="Rank:">
+        <Label fx:id="rankLabel" layoutX="74.0" layoutY="265.0" prefHeight="22.0" prefWidth="151.0" text="Rank:">
             <font>
                 <Font name="Ebrima Bold" size="16.0" />
             </font>
         </Label>
-        <Label fx:id="divisionLabel" layoutX="45.0" layoutY="318.0" prefHeight="22.0" prefWidth="80.0" styleClass="divisionLabel" text="Division:">
+        <Label fx:id="divisionLabel" layoutX="71.0" layoutY="310.0" prefHeight="22.0" prefWidth="158.0" styleClass="divisionLabel" text="Division:">
             <font>
                 <Font name="Ebrima Bold" size="16.0" />
             </font>
         </Label>
 
-        <Label fx:id="nickNameLabel" layoutX="45.0" layoutY="360.0" text="Nickname:">
+        <Label fx:id="nickNameLabel" layoutX="64.0" layoutY="350.0" prefHeight="21.0" prefWidth="171.0" text="Nickname:">
             <font>
                 <Font name="Ebrima Bold" size="16.0" />
             </font>
