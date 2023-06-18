@@ -52,7 +52,7 @@ public class FightersViewController {
             System.out.println(recordField.getText());
 
             fighterRepository.insert(fighter);
-            fighterObservableList.add(fighter);
+                fighterObservableList.add(fighter);
             fightersLv.refresh();
 
       /*  } catch (Exception e) {

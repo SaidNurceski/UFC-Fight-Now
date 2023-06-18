@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -77,7 +78,10 @@ public class DetailsController {
                System.out.println("No photo found for the fighter.");
            }
        } catch (SQLException e) {
-           System.out.println(e.toString());
+           Alert alert = new Alert(Alert.AlertType.ERROR);
+              alert.setTitle("Error");
+
+                alert.showAndWait();
          }
        return "";
    }

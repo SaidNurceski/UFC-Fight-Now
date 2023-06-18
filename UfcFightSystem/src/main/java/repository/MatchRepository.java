@@ -27,7 +27,7 @@ public class MatchRepository implements Persistent<Match_Fight> {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO F_MATCH (U_ID, WINNER, F_IDA, F_IDB) VALUES (?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setLong(1, LoginController.currentUser.getId());
-            preparedStatement.setLong(2, entity.fight());
+            preparedStatement.setLong(2, entity.fight(entity.fighter1, entity.fighter2));
             preparedStatement.setLong(3, entity.fighter1.getId());
             preparedStatement.setLong(4, entity.fighter2.getId());
 
@@ -97,7 +97,7 @@ public class MatchRepository implements Persistent<Match_Fight> {
             PreparedStatement preparedStatement = connection.prepareStatement("UPDATE F_MATCH SET F_IDA = ?, F_IDB = ?, WINNER = ? WHERE M_ID = ?");
             preparedStatement.setLong(1, entity.fighter1.getId());
             preparedStatement.setLong(2, entity.fighter2.getId());
-            preparedStatement.setLong(3, entity.fight());
+            preparedStatement.setLong(3, entity.fight(entity.fighter1, entity.fighter2));
             preparedStatement.setLong(4, entity.getId());
 
             int rowsAffected = preparedStatement.executeUpdate();
@@ -137,5 +137,19 @@ public class MatchRepository implements Persistent<Match_Fight> {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void clearHistory() {
+try{
+            PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM F_MATCH");
+
+            if (preparedStatement.executeUpdate() == 0) {
+                throw new SQLException("Delete from history failed, no rows affected");
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }

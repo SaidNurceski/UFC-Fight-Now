@@ -17,6 +17,7 @@ public class Match_Fight {
         this.fighter2 = fighter2;
     }
 
+
     public Match_Fight(Long id, Fighter fighter1, Fighter fighter2) {
         this.id = id;
         this.fighter1 = fighter1;
@@ -28,6 +29,7 @@ public class Match_Fight {
         this.id = id;
         this.fighter1 = fighter1;
         this.fighter2 = fighter2;
+        winner = fightReturnWithFighter(fighter1, fighter2);
     }
 
     public Long getId() {
@@ -38,24 +40,45 @@ public class Match_Fight {
         this.id = id;
     }
 
-    public Long fight(){
-        int fighter1Power =  fighter1.getRank();
+    public Long fight(Fighter fighter1, Fighter fighter2) {
+        int fighter1Power = fighter1.getRank();
         int fighter2Power = fighter2.getRank();
-        if (fighter1Power == fighter2Power){
-            return null;
-        }
 
-        if (fighter1Power > fighter2Power){
+        if (fighter1Power > fighter2Power) {
             winner = fighter1;
+            System.out.println("Winner is " + winner);
             return fighter1.getId();
         }
-        winner = fighter2;
-        return fighter2.getId();
+        else{
+            winner = fighter2;
+            System.out.println("Winner is " + winner);
+            return fighter2.getId();
+
+        }
+
+    }
+
+    public Fighter fightReturnWithFighter(Fighter fighter1, Fighter fighter2) {
+        int fighter1Power = fighter1.getRank();
+        int fighter2Power = fighter2.getRank();
+
+        if (fighter1Power > fighter2Power) {
+            winner = fighter1;
+            System.out.println("Winner is " + winner);
+            return fighter1;
+        }
+        else{
+            winner = fighter2;
+            System.out.println("Winner is " + winner);
+            return fighter2;
+
+        }
+
     }
 
     @Override
     public String toString() {
-        return "Match with the id:" + id + " " + fighter1.getName() + " vs " + fighter2.getName() + " winner is " + winner;
+        return "Match with the id:" + id + " " + fighter1.getName() + " vs " + fighter2.getName() + " winner is " + winner.getName();
     }
 }
 

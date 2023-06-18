@@ -66,13 +66,22 @@ public class FightChooseController {
             Fighter fighter2 = choosedFighter.get(1);
             Match_Fight match = new Match_Fight(fighter1, fighter2);
             matchRepository.insert(match);
-        }
 
-            /*Alert alert = new Alert(Alert.AlertType.ERROR);
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeight(100);
+            alert.setTitle("Information");
+            alert.setHeaderText("Information");
+            alert.setContentText("Fighter " + fighter1.getName() + " vs " + fighter2.getName() + " the winner is " + match.winner.getName());
+            alert.showAndWait();
+
+        }
+        else {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Error");
             alert.setContentText("You need to choose 2 fighters");
-            alert.showAndWait();*/
+            alert.showAndWait();
+        }
 
     }
         /*Fighter fighter1 = choosedFighter.get(1);

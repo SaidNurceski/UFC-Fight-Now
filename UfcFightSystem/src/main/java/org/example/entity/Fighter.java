@@ -44,6 +44,10 @@ public class Fighter {
         this.rank = rank;
     }
 
+    public Fighter() {
+
+    }
+
     public String getNickName() {
         return nickName;
     }
