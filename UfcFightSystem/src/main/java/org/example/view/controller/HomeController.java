@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import org.example.view.DBUtils;
 
 import java.net.URL;
@@ -19,6 +20,11 @@ public class HomeController implements Initializable {
 
     @FXML
     private Label label_welcome;
+
+    @FXML
+    private void close_app(MouseEvent event){
+        System.exit(0);
+    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         btnFighters.setOnAction(new EventHandler<ActionEvent>() {
