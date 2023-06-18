@@ -10,12 +10,15 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import org.example.entity.User;
 import org.example.view.DBUtils;
+import repository.UserRepository;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
+    public static User currentUser;
     public TextField rf_email;
     public Button btn_login;
     public PasswordField rf_password;
@@ -25,6 +28,7 @@ public class LoginController implements Initializable {
     @FXML
     private AnchorPane parent;
 
+    UserRepository userRepository = new UserRepository();
     @FXML
     private void close_app(MouseEvent event){
         System.exit(0);
@@ -43,9 +47,9 @@ public class LoginController implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 DBUtils.loginUser(event, rf_email.getText(), rf_password.getText());
+                currentUser = userRepository.getByEmail(rf_email.getText());
             }
         });
-
         btn_signup.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

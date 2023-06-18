@@ -1,7 +1,7 @@
 package repository;
 
-import org.example.entity.Fighter;
 import org.example.logik.Match_Fight;
+import org.example.view.controller.LoginController;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -25,11 +25,11 @@ public class MatchRepository implements Persistent<Match_Fight> {
     @Override
     public void insert(Match_Fight entity) {
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO F_MATCH (F_IDA,F_IDB,WINNER) VALUES (?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
-            preparedStatement.setLong(1, entity.fighter1.getId());
-            preparedStatement.setLong(2, entity.fighter2.getId());
-            preparedStatement.setLong(3, entity.fight());
-
+            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO F_MATCH (U_ID, WINNER, F_IDA, F_IDB) VALUES (?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
+            preparedStatement.setLong(1, LoginController.currentUser.getId());
+            preparedStatement.setLong(2, entity.fight());
+            preparedStatement.setLong(3, entity.fighter1.getId());
+            preparedStatement.setLong(4, entity.fighter2.getId());
 
             int rowsAffected = preparedStatement.executeUpdate();
             if(rowsAffected > 0) {
@@ -111,5 +111,31 @@ public class MatchRepository implements Persistent<Match_Fight> {
             throw new RuntimeException(e);
         }
 
+    }
+
+    public List<Match_Fight> getHistoryById(){
+        try{
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM F_MATCH WHERE U_ID = ?");
+            preparedStatement.setLong(1, LoginController.currentUser.getId());
+            List<Match_Fight> history = new ArrayList<>();
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()){
+                long id = resultSet.getLong("M_ID");
+                int idOfTheFighter1 = resultSet.getInt("F_IDA");
+                int idOfTheFighter2 = resultSet.getInt("F_IDB");
+                long userId = LoginController.currentUser.getId();
+
+                history.add(new Match_Fight(new UserRepository().getById(userId),
+                        id,
+                        new FighterRepository().findFighterById(idOfTheFighter1),
+                        new FighterRepository().findFighterById(idOfTheFighter2)));
+            }
+
+            return history;
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

@@ -10,22 +10,6 @@ CREATE TABLE FIGHTER(
 
 );
 
-
-Create Table F_MATCH(
-                        M_ID  INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) primary key,
-                        Winner VARCHAR(50),
-                        F_IDA INTEGER NOT NULL,
-                        F_IDB INTEGER NOT NULL,
-                        FOREIGN KEY (F_IDA) references FIGHTER(F_ID),
-                        FOREIGN KEY (F_IDA) references FIGHTER(F_ID)
-);
-
-
-
-
-
-
-
 CREATE TABLE U_USER (
                         U_ID           INT NOT NULL CONSTRAINT U_PK PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
                         U_FIRST_NAME        VARCHAR(15),
@@ -34,3 +18,18 @@ CREATE TABLE U_USER (
                         U_EMAIL             VARCHAR(30),
                         U_AGE               INT
 );
+
+
+Create Table F_MATCH(
+                        M_ID  INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) primary key,
+                        Winner VARCHAR(50),
+                        F_IDA INTEGER NOT NULL,
+                        F_IDB INTEGER NOT NULL,
+                        U_ID INTEGER NOT NULL,
+                        FOREIGN KEY (F_IDA) references FIGHTER(F_ID),
+                        FOREIGN KEY (F_IDA) references FIGHTER(F_ID),
+                        FOREIGN KEY (U_ID) references U_USER (U_ID)
+);
+
+
+

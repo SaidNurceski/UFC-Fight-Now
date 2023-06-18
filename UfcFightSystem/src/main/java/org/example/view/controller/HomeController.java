@@ -19,10 +19,8 @@ public class HomeController implements Initializable {
 
     @FXML
     private Label label_welcome;
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
         btnFighters.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {

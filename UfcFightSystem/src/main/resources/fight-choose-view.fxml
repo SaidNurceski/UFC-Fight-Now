@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.text.Font?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.view.controller.FightChooseController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.view.controller.FightChooseController">
 
     <children>
-        <Label layoutX="207.0" layoutY="7.0" prefHeight="47.0" prefWidth="305.0" text="Chose Your Fighters To Fight">
+        <Label layoutX="207.0" layoutY="7.0" prefHeight="47.0" prefWidth="200.0" text="Chose Your Fighters To Fight">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
         </Label>
-        <Button layoutX="527.0" layoutY="18.0" mnemonicParsing="false" text="HOME"  fx:id="btnHome"/>
-        <ListView layoutX="207.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" fx:id="fighterLv" />
-        <Button layoutX="276.0" layoutY="339.0" mnemonicParsing="false" text="FIGHT" onAction="#onFightBtn" />
-        <Button layoutX="274.0" layoutY="254.0" mnemonicParsing="false" text="Choose" onAction="#onChooseBtn" />
+        <Button fx:id="btnHome" layoutX="527.0" layoutY="18.0" mnemonicParsing="false" styleClass="loginBtn" stylesheets="@css/loginStyle.css" text="Home">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <ListView fx:id="fighterLv" layoutX="207.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" />
+        <Button layoutX="272.0" layoutY="337.0" mnemonicParsing="false" onAction="#onFightBtn" prefHeight="26.0" prefWidth="56.0" styleClass="loginBtn" stylesheets="@css/loginStyle.css" text="FIGHT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Button layoutX="272.0" layoutY="262.0" mnemonicParsing="false" onAction="#onChooseBtn" styleClass="loginBtn" stylesheets="@css/loginStyle.css" text="Choose">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
         <Label fx:id="fighter1Label" layoutX="171.0" layoutY="301.0" text="Fighter1" />
-        <Label layoutX="286.0" layoutY="301.0" text="VS" />
+        <Label layoutX="293.0" layoutY="301.0" text="VS" />
         <Label fx:id="fighter2Label" layoutX="385.0" layoutY="301.0" text="Fighter2" />
-        <ImageView fitHeight="47.0" fitWidth="173.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="47.0" fitWidth="173.0" layoutX="40.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@img/ufc_logo.png" />
             </image>
