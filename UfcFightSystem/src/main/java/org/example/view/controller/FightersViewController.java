@@ -4,9 +4,11 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import org.example.entity.Fighter;
 import org.example.view.DBUtils;
 import repository.FighterRepository;
@@ -80,5 +82,24 @@ public class FightersViewController {
 
     }
 
+    @FXML
+    private void close_app(MouseEvent event){
+        System.exit(0);
+    }
 
+    public void onBtnHistory(ActionEvent actionEvent) {
+        DBUtils.changeScene(actionEvent,"/history-view.fxml","History",null);
+    }
+
+    public void btn_fighters(ActionEvent actionEvent) {
+        DBUtils.changeScene(actionEvent,"/fighters-view.fxml","Fighters",null);
+    }
+
+    public void btnFighters(ActionEvent actionEvent) {
+        DBUtils.changeScene(actionEvent,"/fight-choose-view.fxml","Choose",null);
+    }
+
+    public void logoutBtn(ActionEvent actionEvent) {
+        DBUtils.changeScene(actionEvent, "/login-view.fxml", "Login", null);
+    }
 }

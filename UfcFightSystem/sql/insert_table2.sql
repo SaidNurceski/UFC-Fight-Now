@@ -4,7 +4,7 @@ VALUES ('Conor McGregor', 33, '22-5', 1, 'LIGHTWEIGHT', 'The Notorious','C:\Prog
 
 
 INSERT INTO FIGHTER(NAME, AGE, RECORD, RANK, DIVISION, NICKNAME,PHOTO)
-VALUES ('ISLAM MAKACHEV', 32, '12-7', 1, 'LIGHTWEIGHT', 'The Eagle','C:\ProgJava\UFC-Java-2\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\islamakhachev.png');
+VALUES ('ISLAM MAKACHEV', 32, '12-7', 1, 'LIGHTWEIGHT', 'The Eagle','C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\islamakhachev.png');
 
 INSERT INTO FIGHTER(NAME, AGE, RECORD, RANK, DIVISION, NICKNAME)
 VALUES ('Justin Gaethje', 33, '22-4', 2, 'LIGHTWEIGHT', 'The Highlight');
@@ -67,13 +67,6 @@ VALUES ('Curtis Blaydes', 30, '14-3-1', 4, 'HEAVYWEIGHT', 'Razor');
 
 INSERT INTO FIGHTER(NAME, AGE, RECORD, RANK, DIVISION, NICKNAME)
 VALUES ('Alexander Volkov', 33, '34-9', 5, 'HEAVYWEIGHT', 'Drago');
-
-INSERT INTO U_USER (U_FIRST_NAME, U_LAST_NAME, U_PASSWORD, U_EMAIL, U_AGE) VALUES ('Linus', 'Nestler','123', 'ln@gmail.com', 3);
-INSERT INTO U_USER (U_FIRST_NAME, U_LAST_NAME, U_PASSWORD, U_EMAIL, U_AGE) VALUES ('Oliver', 'Daxinger', '123', 'od@gmail.com', 5);
-INSERT INTO U_USER (U_FIRST_NAME, U_LAST_NAME, U_PASSWORD, U_EMAIL, U_AGE) VALUES ('Bajtik', 'Berg', '123', 'bb@gmail.com', 5);
-INSERT INTO U_USER (U_FIRST_NAME, U_LAST_NAME, U_PASSWORD, U_EMAIL, U_AGE) VALUES ('Said', 'Nurceski', '123', 'sn@gmail.com', 4);
-INSERT INTO U_USER (U_FIRST_NAME, U_LAST_NAME, U_PASSWORD, U_EMAIL, U_AGE) VALUES ('bal', 'sad', '123', 'b@gmail.com', 4);
-
 
 INSERT INTO U_USER (U_FIRST_NAME, U_LAST_NAME, U_PASSWORD, U_EMAIL, U_AGE) VALUES ('Linus', 'Nestler','123', 'ln@gmail.com', 3);
 INSERT INTO U_USER (U_FIRST_NAME, U_LAST_NAME, U_PASSWORD, U_EMAIL, U_AGE) VALUES ('Oliver', 'Daxinger', '123', 'od@gmail.com', 5);

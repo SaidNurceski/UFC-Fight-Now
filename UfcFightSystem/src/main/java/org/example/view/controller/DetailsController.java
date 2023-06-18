@@ -6,9 +6,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import org.example.entity.Fighter;
 import org.example.view.DBUtils;
@@ -32,8 +34,10 @@ public class DetailsController {
     public Label nickNameLabel;
     public ImageView imageFighter;
 
-    public ImageView btn_back_to_menu;
-
+    @FXML
+    private void close_app(MouseEvent event){
+        System.exit(0);
+    }
 
    /* private String getImageByFighter(){
         System.out.println("get image by fighter");
@@ -50,18 +54,6 @@ public class DetailsController {
         }
         return "";
     }*/
-
-    @FXML
-    private void back_to_menu() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/home-view.fxml"));
-        Parent root = loader.load();
-        Scene scene = new Scene(root);
-        Stage currentStage = (Stage) btn_back_to_menu.getScene().getWindow();
-        Stage newStage = new Stage();
-        newStage.setScene(scene);
-        newStage.show();
-        currentStage.close();
-    }
    private String getImageByFighter() {
        System.out.println("get image by fighter");
        System.out.println(currentFighter.getName());
@@ -98,6 +90,25 @@ public class DetailsController {
         System.out.println(getImageByFighter());
         FileInputStream fileInputStream = new FileInputStream(getImageByFighter());
         imageFighter.setImage(new Image(fileInputStream));
+    }
+    public void onBtnHistory(ActionEvent actionEvent) {
+        DBUtils.changeScene(actionEvent,"/history-view.fxml","History",null);
+    }
+
+    public void btn_fighters(ActionEvent actionEvent) {
+        DBUtils.changeScene(actionEvent,"/fighters-view.fxml","Fighters",null);
+    }
+
+    public void btnFighters(ActionEvent actionEvent) {
+        DBUtils.changeScene(actionEvent,"/fight-choose-view.fxml","Choose",null);
+    }
+
+    public void btnHome(ActionEvent actionEvent) {
+        DBUtils.changeScene(actionEvent, "/home-view.fxml", "Home", null);
+    }
+
+    public void logoutBtn(ActionEvent actionEvent) {
+        DBUtils.changeScene(actionEvent, "/login-view.fxml", "Login", null);
     }
 
    /* public void btnOnBack(ActionEvent actionEvent) {

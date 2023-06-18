@@ -42,7 +42,7 @@
                         <Font name="Arial Rounded MT Bold" size="13.0" />
                     </font>
                 </Button>
-                <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="212.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="289.0" stylesheets="@css/homeStyle.css" text="Settings" textFill="WHITE">
+                <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="212.0" mnemonicParsing="false" onAction="#logoutBtn" prefHeight="67.0" prefWidth="289.0" stylesheets="@css/homeStyle.css" text="Log out" textFill="WHITE">
                     <padding>
                         <Insets left="50.0" />
                     </padding>

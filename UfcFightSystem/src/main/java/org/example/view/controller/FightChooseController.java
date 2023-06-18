@@ -4,10 +4,12 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.input.MouseEvent;
 import org.example.entity.Fighter;
 import org.example.logik.Match_Fight;
 import org.example.view.DBUtils;
@@ -31,6 +33,11 @@ public class FightChooseController {
     public Button btnHome;
     private ObservableList<Fighter> fighterObservableList = FXCollections.observableArrayList(fighterRepository.getAll());
     private FilteredList<Fighter> fighterFilteredList = null;
+
+    @FXML
+    private void close_app(MouseEvent event){
+        System.exit(0);
+    }
 
     public void initialize() {
         btnHome.setOnAction(actionEvent -> {
@@ -83,6 +90,22 @@ public class FightChooseController {
             alert.showAndWait();
         }
 
+    }
+
+    public void onBtnHistory(ActionEvent actionEvent) {
+        DBUtils.changeScene(actionEvent,"/history-view.fxml","History",null);
+    }
+
+    public void btn_fighters(ActionEvent actionEvent) {
+        DBUtils.changeScene(actionEvent,"/fighters-view.fxml","Fighters",null);
+    }
+
+    public void btnFighters(ActionEvent actionEvent) {
+        DBUtils.changeScene(actionEvent,"/fight-choose-view.fxml","Choose",null);
+    }
+
+    public void logoutBtn(ActionEvent actionEvent) {
+        DBUtils.changeScene(actionEvent, "/login-view.fxml", "Login", null);
     }
         /*Fighter fighter1 = choosedFighter.get(1);
         Fighter fighter2 = choosedFighter.get(2);

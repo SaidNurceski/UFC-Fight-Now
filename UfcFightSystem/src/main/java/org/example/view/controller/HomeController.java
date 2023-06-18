@@ -57,4 +57,8 @@ public class HomeController implements Initializable {
     public void onBtnHistory(ActionEvent actionEvent) {
         DBUtils.changeScene(actionEvent,"/history-view.fxml","History",null);
     }
+
+    public void logoutBtn(ActionEvent actionEvent) {
+        DBUtils.changeScene(actionEvent, "/login-view.fxml", "Login", null);
+    }
 }

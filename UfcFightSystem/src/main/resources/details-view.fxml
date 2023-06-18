@@ -1,54 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.view.controller.DetailsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.view.controller.DetailsController">
 
     <children>
-        <ImageView fitHeight="108.0" fitWidth="135.0" layoutX="46.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@img/black_ufc_logo.png" />
-            </image>
-        </ImageView>
-        <ImageView fx:id="imageFighter" fitHeight="301.0" fitWidth="584.0" layoutX="219.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
-        <Label fx:id="nameLabel" layoutX="266.0" layoutY="44.0" prefHeight="46.0" prefWidth="245.0" text="NAME OF THE FIGHTER">
+        <VBox layoutX="-5.0" prefHeight="551.0" prefWidth="279.0" style="-fx-background-color: #455a64;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane prefHeight="124.0" prefWidth="279.0">
+                    <children>
+                        <ImageView fitHeight="58.0" fitWidth="141.0" layoutX="56.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/black_ufc_logo.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#btn_fighters" prefHeight="67.0" prefWidth="289.0" stylesheets="@css/homeStyle.css" text="Fighters" textFill="WHITE">
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                    </font></Button>
+                <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnFighters" prefHeight="67.0" prefWidth="289.0" stylesheets="@css/homeStyle.css" text="Fight" textFill="WHITE">
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                    </font>
+                </Button>
+                <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onBtnHistory" prefHeight="67.0" prefWidth="289.0" stylesheets="@css/homeStyle.css" text="History" textFill="WHITE">
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                    </font>
+                </Button>
+                <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="212.0" mnemonicParsing="false" onAction="#logoutBtn" prefHeight="67.0" prefWidth="289.0" stylesheets="@css/homeStyle.css" text="Log out" textFill="WHITE">
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                    </font>
+                </Button>
+            </children></VBox>
+        <ImageView fx:id="imageFighter" fitHeight="242.0" fitWidth="267.0" layoutX="484.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" />
+        <Label fx:id="nameLabel" layoutX="464.0" layoutY="21.0" prefHeight="46.0" prefWidth="245.0" text="NAME OF THE FIGHTER">
             <font>
                 <Font name="Arial Black" size="18.0" />
             </font>
         </Label>
-        <Label fx:id="recordLabel" layoutX="74.0" layoutY="228.0" prefHeight="22.0" prefWidth="151.0" text="Record:">
+        <Button layoutX="294.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnHome" styleClass="loginBtn" stylesheets="@css/loginStyle.css" text="Home">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+        
+        <Label fx:id="recordLabel" layoutX="373.0" layoutY="349.0" prefHeight="22.0" prefWidth="151.0" text="Record:">
             <font>
                 <Font name="Ebrima Bold" size="16.0" />
             </font>
         </Label>
-        <Label fx:id="rankLabel" layoutX="74.0" layoutY="265.0" prefHeight="22.0" prefWidth="151.0" text="Rank:">
+        <Label fx:id="rankLabel" layoutX="356.0" layoutY="397.0" prefHeight="22.0" prefWidth="151.0" text="Rank:">
             <font>
                 <Font name="Ebrima Bold" size="16.0" />
             </font>
         </Label>
-        <Label fx:id="labelAge" layoutX="71.0" layoutY="190.0" prefHeight="22.0" prefWidth="127.0" text="Age:">
+        <Label fx:id="labelAge" layoutX="356.0" layoutY="309.0" prefHeight="22.0" prefWidth="127.0" text="Age:">
             <font>
                 <Font name="Ebrima Bold" size="16.0" />
             </font>
         </Label>
-        <Label fx:id="divisionLabel" layoutX="71.0" layoutY="310.0" prefHeight="22.0" prefWidth="158.0" styleClass="divisionLabel" text="Division:">
+        <Label fx:id="divisionLabel" layoutX="382.0" layoutY="448.0" prefHeight="22.0" prefWidth="158.0" styleClass="divisionLabel" text="Division:">
             <font>
                 <Font name="Ebrima Bold" size="16.0" />
             </font>
         </Label>
 
-        <Label fx:id="nickNameLabel" layoutX="64.0" layoutY="350.0" prefHeight="21.0" prefWidth="171.0" text="Nickname:">
+        <Label fx:id="nickNameLabel" layoutX="390.0" layoutY="500.0" prefHeight="21.0" prefWidth="171.0" text="Nickname:">
             <font>
                 <Font name="Ebrima Bold" size="16.0" />
             </font>
         </Label>
-      <ImageView fx:id="btn_back_to_menu" fitHeight="35.0" fitWidth="30.0" layoutX="806.0" layoutY="44.0" onMouseClicked="#back_to_menu" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="26.0" fitWidth="34.0" layoutX="828.0" layoutY="31.0" onMouseClicked="#close_app" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@img/arrowback.png" />
+            <Image url="@img/close.png" />
          </image>
       </ImageView>
+      <Label layoutX="308.0" layoutY="349.0" prefHeight="22.0" prefWidth="73.0" text="Record:">
+         <font>
+            <Font name="Ebrima Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="397.0" prefHeight="22.0" prefWidth="48.0" text="Rank:">
+         <font>
+            <Font name="Ebrima Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="309.0" prefHeight="22.0" prefWidth="48.0" text="Age:">
+         <font>
+            <Font name="Ebrima Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="448.0" prefHeight="22.0" prefWidth="74.0" styleClass="divisionLabel" text="Division:">
+         <font>
+            <Font name="Ebrima Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="500.0" prefHeight="22.0" prefWidth="82.0" text="Nickname:">
+         <font>
+            <Font name="Ebrima Bold" size="16.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>
