@@ -86,6 +86,10 @@ public class DetailsController {
         recordLabel.setText(currentFighter.getRecord());
         divisionLabel.setText(currentFighter.getDivisionName());
         labelAge.setText(String.valueOf(currentFighter.getAge()));
+
+        System.out.println("HIER IST DER NICKNAME");
+        System.out.println(currentFighter.getNickName());
+
         nickNameLabel.setText(currentFighter.getNickName());
         System.out.println(getImageByFighter());
         FileInputStream fileInputStream = new FileInputStream(getImageByFighter());

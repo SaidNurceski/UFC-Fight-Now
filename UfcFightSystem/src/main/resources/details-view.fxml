@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.view.controller.DetailsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.view.controller.DetailsController">
 
     <children>
         <VBox layoutX="-5.0" prefHeight="551.0" prefWidth="279.0" style="-fx-background-color: #455a64;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -84,7 +84,7 @@
             </font>
         </Label>
 
-        <Label fx:id="nickNameLabel" layoutX="390.0" layoutY="500.0" prefHeight="21.0" prefWidth="171.0" text="Nickname:">
+        <Label  fx:id="nickNameLabel" layoutX="390.0" layoutY="500.0" prefHeight="21.0" prefWidth="171.0" text="Nickname:">
             <font>
                 <Font name="Ebrima Bold" size="16.0" />
             </font>

@@ -85,7 +85,7 @@ public class FighterRepository implements Persistent<Fighter>{
                 String division = resultSet.getString("DIVISION");
                 String nickname = resultSet.getString("NICKNAME");
 
-                fighters.add(new Fighter(id,name,division,age,record,rank));
+                fighters.add(new Fighter(id,name,division,age,record,rank,nickname));
 
             }
             return fighters;
@@ -109,7 +109,7 @@ public class FighterRepository implements Persistent<Fighter>{
                 System.out.println("Fighter Record: " + resultSet.getString("Record"));
                 System.out.println("Fighter Rank: " + resultSet.getInt("Rank"));
                 System.out.println("Fighter Division: " + resultSet.getString("Division"));
-                return new Fighter(resultSet.getLong("F_ID"),resultSet.getString("NAME"),resultSet.getString("Division"),resultSet.getInt("AGE"),resultSet.getString("Record"),resultSet.getInt("Rank"));
+                return new Fighter(resultSet.getLong("F_ID"),resultSet.getString("NAME"),resultSet.getString("Division"),resultSet.getInt("AGE"),resultSet.getString("Record"),resultSet.getInt("Rank"),resultSet.getString("Nickname"));
             }
         }
         catch(SQLException s){

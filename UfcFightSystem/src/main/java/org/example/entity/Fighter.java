@@ -18,9 +18,10 @@ public class Fighter {
         this.age = age;
     }
 
-    public Fighter(Long id,String name,String divisionName,  int age, String record, int rank) {
+    public Fighter(Long id,String name,String divisionName,  int age, String record, int rank, String nickName) {
         this.divisionName = divisionName;
         this.name = name;
+        this.nickName = nickName;
         this.id = id;
         this.age = age;
         this.record = record;

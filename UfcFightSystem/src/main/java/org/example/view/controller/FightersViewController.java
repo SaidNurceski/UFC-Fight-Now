@@ -68,6 +68,7 @@ public class FightersViewController {
     public void btnOnFighterDetails(ActionEvent actionEvent) {
         try{
             Fighter currentFighter = (Fighter) fightersLv.getSelectionModel().getSelectedItem();
+            System.out.println(currentFighter.getNickName());
             DetailsController.currentFighter = currentFighter;
             System.out.println(currentFighter);
             DBUtils.changeScene(actionEvent, "/details-view.fxml", "Details", null);
