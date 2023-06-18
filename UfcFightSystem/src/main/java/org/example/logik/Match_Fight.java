@@ -78,7 +78,7 @@ public class Match_Fight {
 
     @Override
     public String toString() {
-        return "Match with the id:" + id + " " + fighter1.getName() + " vs " + fighter2.getName() + " winner is " + winner.getName();
+        return "Match: " + fighter1.getName() + " vs " + fighter2.getName() + " winner was " + winner.getName();
     }
 }
 
