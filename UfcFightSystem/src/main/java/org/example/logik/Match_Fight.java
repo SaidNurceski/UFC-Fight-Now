@@ -1,5 +1,6 @@
 package org.example.logik;
 
+import javafx.scene.control.Alert;
 import org.example.entity.Fighter;
 import org.example.entity.User;
 import repository.FighterRepository;
@@ -71,9 +72,7 @@ public class Match_Fight {
             winner = fighter2;
             System.out.println("Winner is " + winner);
             return fighter2;
-
         }
-
     }
 
     @Override

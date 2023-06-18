@@ -68,7 +68,7 @@ public class FightChooseController {
         System.out.println(choosedFighter.get(1).getName());
         System.out.println(choosedFighter.get(1).getId());
 
-        if (choosedFighter.size() == 2) {
+        if (choosedFighter.size() == 2 && choosedFighter.get(0).getDivisionName().equals(choosedFighter.get(1).getDivisionName())) {
             Fighter fighter1 = choosedFighter.get(0);
             Fighter fighter2 = choosedFighter.get(1);
             Match_Fight match = new Match_Fight(fighter1, fighter2);
@@ -86,7 +86,7 @@ public class FightChooseController {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Error");
-            alert.setContentText("You need to choose 2 fighters");
+            alert.setContentText("You need to choose 2 fighters in the SAME Division");
             alert.showAndWait();
         }
 

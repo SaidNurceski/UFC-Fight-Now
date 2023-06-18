@@ -1,10 +1,10 @@
 --LIGHTWEIGHT
 INSERT INTO FIGHTER(NAME, AGE, RECORD, RANK, DIVISION, NICKNAME,PHOTO)
-VALUES ('Conor McGregor', 33, '22-5', 1, 'LIGHTWEIGHT', 'The Notorious','C:\ProgJava\UFC-Java-2\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\mcgregor.jpg');
+VALUES ('Conor McGregor', 33, '22-5', 1, 'LIGHTWEIGHT', 'The Notorious','C:\ProgJava\UFC-Java-2\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\mcgregor.png');
 
 
 INSERT INTO FIGHTER(NAME, AGE, RECORD, RANK, DIVISION, NICKNAME,PHOTO)
-VALUES ('ISLAM MAKACHEV', 32, '12-7', 1, 'LIGHTWEIGHT', 'The Eagle','C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\islamakhachev.png');
+VALUES ('Islam Makhachev', 32, '12-7', 1, 'LIGHTWEIGHT', 'The Eagle','C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\islamakhachev.png');
 
 INSERT INTO FIGHTER(NAME, AGE, RECORD, RANK, DIVISION, NICKNAME)
 VALUES ('Justin Gaethje', 33, '22-4', 2, 'LIGHTWEIGHT', 'The Highlight');
