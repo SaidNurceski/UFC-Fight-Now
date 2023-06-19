@@ -80,6 +80,9 @@ public class FightChooseController {
             Fighter fighter2 = choosedFighter.get(1);
             Match_Fight match = new Match_Fight(fighter1, fighter2);
             matchRepository.insert(match);
+            choosedFighter.clear();
+            fighter1Label.setText("Fighter 1");
+            fighter2Label.setText("Fighter 2");
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setHeight(300);
