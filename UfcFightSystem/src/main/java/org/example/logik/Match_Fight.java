@@ -51,7 +51,7 @@ public class Match_Fight {
         int randomInt = random.nextInt(20) + 1;
         int randomInt2 = random.nextInt(20) + 1;
 
-        if (fighter1Power * randomInt > fighter2Power * randomInt2) {
+        if (fighter1Power * randomInt < fighter2Power * randomInt2) {
             winner = fighter1;
             System.out.println("Winner is " + winner);
             return fighter1.getId();
@@ -72,7 +72,7 @@ public class Match_Fight {
         int randomInt = random.nextInt(20) + 1;
         int randomInt2 = random.nextInt(20) + 1;
 
-        if (fighter1Power * randomInt > fighter2Power * randomInt2) {
+        if (fighter1Power * randomInt < fighter2Power * randomInt2) {
             winner = fighter1;
             System.out.println("Winner is " + winner);
             return fighter1;

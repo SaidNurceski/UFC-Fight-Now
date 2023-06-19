@@ -3,19 +3,19 @@ INSERT INTO FIGHTER(NAME, AGE, RECORD, RANK, DIVISION, NICKNAME,PHOTO)
 VALUES ('Conor McGregor', 33, '22-5', 1, 'LIGHTWEIGHT', 'The Notorious','C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\mcgregor.png');
 
 INSERT INTO FIGHTER(NAME, AGE, RECORD, RANK, DIVISION, NICKNAME,PHOTO)
-VALUES ('Islam Makhachev', 32, '12-7', 1, 'LIGHTWEIGHT', 'The Eagle','C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\islamakhachev.png');
+VALUES ('Islam Makhachev', 32, '12-7', 2, 'LIGHTWEIGHT', 'The Eagle','C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\islamakhachev.png');
 
 INSERT INTO FIGHTER(NAME, AGE, RECORD, RANK, DIVISION, NICKNAME, PHOTO)
-VALUES ('Justin Gaethje', 33, '22-4', 2, 'LIGHTWEIGHT', 'The Highlight','C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\justingaethje.png');
+VALUES ('Justin Gaethje', 33, '22-4', 3, 'LIGHTWEIGHT', 'The Highlight','C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\justingaethje.png');
 
 INSERT INTO FIGHTER(NAME, AGE, RECORD, RANK, DIVISION, NICKNAME, PHOTO)
-VALUES ('Dustin Poirier', 32, '28-6-1', 3, 'LIGHTWEIGHT', 'The Diamond','C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\dustinpoirier.png');
+VALUES ('Dustin Poirier', 32, '28-6-1', 4, 'LIGHTWEIGHT', 'The Diamond','C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\dustinpoirier.png');
 
 INSERT INTO FIGHTER(NAME, AGE, RECORD, RANK, DIVISION, NICKNAME, PHOTO)
-VALUES ('Charles Oliveira', 31, '31-8', 4, 'LIGHTWEIGHT', 'Do Bronx', 'C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\olivera.png');
+VALUES ('Charles Oliveira', 31, '31-8', 5, 'LIGHTWEIGHT', 'Do Bronx', 'C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\olivera.png');
 
 INSERT INTO FIGHTER(NAME, AGE, RECORD, RANK, DIVISION, NICKNAME, PHOTO)
-VALUES ('Beneil Dariush', 32, '21-4-1', 5, 'LIGHTWEIGHT', 'Benny', 'C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\beneildariush.png');
+VALUES ('Beneil Dariush', 32, '21-4-1', 6, 'LIGHTWEIGHT', 'Benny', 'C:\Saidprpr\3.Klasse\PR JAVA 3.Klasse\UFC_Projekt\UFC-Fight-Now\UfcFightSystem\src\main\resources\img\beneildariush.png');
 
 --MIDDLEWEIGHT
 INSERT INTO FIGHTER(NAME, AGE, RECORD, RANK, DIVISION, NICKNAME, PHOTO)
