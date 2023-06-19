@@ -10,11 +10,18 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.FontWeight;
 import org.example.entity.Fighter;
 import org.example.logik.Match_Fight;
 import org.example.view.DBUtils;
 import repository.FighterRepository;
 import repository.MatchRepository;
+import javafx.scene.layout.StackPane;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
+
+
+
 
 import java.util.LinkedList;
 import java.util.List;
@@ -75,12 +82,11 @@ public class FightChooseController {
             matchRepository.insert(match);
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setHeight(100);
+            alert.setHeight(300);
             alert.setTitle("Information");
             alert.setHeaderText("Information");
             alert.setContentText("Fighter " + fighter1.getName() + " vs " + fighter2.getName() + " the winner is " + match.winner.getName());
             alert.showAndWait();
-
         }
         else {
             Alert alert = new Alert(Alert.AlertType.ERROR);

@@ -20,12 +20,13 @@ public class FighterRepository implements Persistent<Fighter>{
     @Override
     public void insert(Fighter entity) {
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO Fighter (NAME, AGE, Record,Rank,Division) VALUES (?, ?, ?,?,?)", Statement.RETURN_GENERATED_KEYS);
+            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO Fighter (NAME, AGE, Record,Rank, PHOTO, Division) VALUES (?, ?, ?,?,?, ?)", Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, entity.getName());
             preparedStatement.setInt(2, entity.getAge());
             preparedStatement.setString(3, entity.getRecord());
             preparedStatement.setInt(4, entity.getRank());
-            preparedStatement.setString(5, entity.getDivisionName());
+            preparedStatement.setString(5, entity.getPhoto());
+            preparedStatement.setString(6, entity.getDivisionName());
 
 
             int rowsAffected = preparedStatement.executeUpdate();

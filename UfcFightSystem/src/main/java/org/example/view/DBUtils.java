@@ -59,7 +59,7 @@ public class DBUtils {
         else{
             User insUser = new User(firstName, lastName, password, email, age);
             user.insert(insUser);
-            changeScene(event, "home-view.fxml", "Home", firstName);
+            changeScene(event, "/login-view.fxml", "Login", null);
         }
     }
 

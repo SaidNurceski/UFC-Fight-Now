@@ -54,7 +54,6 @@ public class Match_Fight {
             winner = fighter2;
             System.out.println("Winner is " + winner);
             return fighter2.getId();
-
         }
 
     }

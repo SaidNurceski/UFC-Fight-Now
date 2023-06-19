@@ -6,6 +6,8 @@ public class Fighter {
     private String name;
     private  Long id;
     private  int age;
+
+    private String photo;
     private String record;
 
     private  String nickName;
@@ -45,8 +47,26 @@ public class Fighter {
         this.rank = rank;
     }
 
+    public Fighter(String divisionName, String name, int age, String photo, String record, String nickName, int rank) {
+        this.divisionName = divisionName;
+        this.name = name;
+        this.age = age;
+        this.photo = photo;
+        this.record = record;
+        this.nickName = nickName;
+        this.rank = rank;
+    }
+
     public Fighter() {
 
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
     }
 
     public String getNickName() {
