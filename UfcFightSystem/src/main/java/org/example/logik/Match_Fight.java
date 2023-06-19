@@ -68,7 +68,11 @@ public class Match_Fight {
         int fighter1Power = fighter1.getRank();
         int fighter2Power = fighter2.getRank();
 
-        if (fighter1Power > fighter2Power) {
+        Random random = new Random();
+        int randomInt = random.nextInt(20) + 1;
+        int randomInt2 = random.nextInt(20) + 1;
+
+        if (fighter1Power * randomInt > fighter2Power * randomInt2) {
             winner = fighter1;
             System.out.println("Winner is " + winner);
             return fighter1;
