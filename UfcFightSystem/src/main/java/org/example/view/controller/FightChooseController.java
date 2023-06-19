@@ -96,6 +96,9 @@ public class FightChooseController {
             alert.setTitle("Error");
             alert.setHeaderText("Error");
             alert.setContentText("You need to choose 2 fighters in the SAME Division");
+            choosedFighter.clear();
+            fighter1Label.setText("Fighter 1");
+            fighter2Label.setText("Fighter 2");
             alert.showAndWait();
         }
 
