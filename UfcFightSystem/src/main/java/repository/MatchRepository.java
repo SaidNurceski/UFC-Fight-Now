@@ -1,5 +1,6 @@
 package repository;
 
+import org.example.entity.User;
 import org.example.logik.Match_Fight;
 import org.example.view.controller.LoginController;
 
@@ -94,11 +95,13 @@ public class MatchRepository implements Persistent<Match_Fight> {
     @Override
     public void update(Match_Fight entity) {
         try{
-            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE F_MATCH SET F_IDA = ?, F_IDB = ?, WINNER = ? WHERE M_ID = ?");
+            User user = LoginController.currentUser;
+            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE F_MATCH SET F_IDA = ?, F_IDB = ?, WINNER = ?, U_ID = ? WHERE M_ID = ?");
             preparedStatement.setLong(1, entity.fighter1.getId());
             preparedStatement.setLong(2, entity.fighter2.getId());
             preparedStatement.setLong(3, entity.fight(entity.fighter1, entity.fighter2));
-            preparedStatement.setLong(4, entity.getId());
+            preparedStatement.setLong(4, user.getId());
+            preparedStatement.setLong(5, entity.getId());
 
             int rowsAffected = preparedStatement.executeUpdate();
             if(rowsAffected > 0) {
