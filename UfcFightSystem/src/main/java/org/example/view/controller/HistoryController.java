@@ -28,6 +28,7 @@ public class HistoryController {
 
     public void onClearBtn(ActionEvent actionEvent) {
     matchRepository.clearHistory();
+    matchList.clear();
     historyLv.refresh();
 
     }
